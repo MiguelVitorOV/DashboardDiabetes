@@ -3,8 +3,9 @@ import os
 import glob
 
 def extract_diabetes():
-    input_dir = 'data/raw'
-    output_dir = 'data/extracted'
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    input_dir = os.path.join(base_dir, 'data/raw')
+    output_dir = os.path.join(base_dir, 'data/extracted')
     
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)

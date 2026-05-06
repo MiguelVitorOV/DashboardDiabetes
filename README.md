@@ -28,11 +28,9 @@ A atualização dos dados segue uma ordem obrigatória de scripts dentro da past
 
 1.  **Extração**: `python etl_extract_diabetes.py`
     - Filtra os óbitos por CID-10 (E10-E14) e gera arquivos em `data/extracted/`.
-2.  **Transformação (MG)**: `python etl_transform_mg.py`
-    - Calcula totais e porcentagens demográficas para o estado.
-3.  **Transformação (Matipó)**: `python etl_transform_matipo.py`
-    - Realiza os mesmos cálculos especificamente para Matipó.
-4.  **Carga**: `python etl_load_dashboard.py`
+2.  **Transformação**: `python etl_transform_diabetes.py`
+    - Calcula totais e porcentagens demográficas para o estado (MG) e para o município (Matipó) simultaneamente.
+3.  **Carga**: `python etl_load_dashboard.py`
     - Consolida tudo em um JSON e o envia para a pasta do dashboard.
 
 ---

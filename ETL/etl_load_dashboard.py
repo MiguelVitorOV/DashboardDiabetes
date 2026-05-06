@@ -4,12 +4,13 @@ import os
 import glob
 
 def load_dashboard():
-    mg_dir = 'data/processed/mg'
-    matipo_dir = 'data/processed/matipo'
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    mg_dir = os.path.join(base_dir, 'data/processed/mg')
+    matipo_dir = os.path.join(base_dir, 'data/processed/matipo')
     
     # Destinos
-    output_etl = 'data/diabetes_dashboard.json'
-    output_frontend = '../dashboard/data/diabetes_dashboard.json'
+    output_etl = os.path.join(base_dir, 'data/diabetes_dashboard.json')
+    output_frontend = os.path.join(base_dir, '../dashboard/data/diabetes_dashboard.json')
     
     dashboard_data = {"Ano": {}}
     

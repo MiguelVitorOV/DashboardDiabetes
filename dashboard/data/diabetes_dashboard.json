@@ -1,0 +1,4288 @@
+{
+    "Ano": {
+        "2014": {
+            "Obitos": {
+                "MG": {
+                    "Valor": 5159,
+                    "Porcentagem": "100.0%"
+                },
+                "Matipó": {
+                    "Valor": 7,
+                    "Porcentagem": "100.0%"
+                }
+            },
+            "Masculino": {
+                "MG": {
+                    "Valor": 2220,
+                    "Porcentagem": "43.0%"
+                },
+                "Matipó": {
+                    "Valor": 3,
+                    "Porcentagem": "42.9%"
+                }
+            },
+            "Feminino": {
+                "MG": {
+                    "Valor": 2933,
+                    "Porcentagem": "56.9%"
+                },
+                "Matipó": {
+                    "Valor": 4,
+                    "Porcentagem": "57.1%"
+                }
+            },
+            "Branco": {
+                "MG": {
+                    "Valor": 2493,
+                    "Porcentagem": "48.3%"
+                },
+                "Matipó": {
+                    "Valor": 5,
+                    "Porcentagem": "71.4%"
+                }
+            },
+            "Pardo": {
+                "MG": {
+                    "Valor": 1610,
+                    "Porcentagem": "31.2%"
+                },
+                "Matipó": {
+                    "Valor": 2,
+                    "Porcentagem": "28.6%"
+                }
+            },
+            "Preto": {
+                "MG": {
+                    "Valor": 598,
+                    "Porcentagem": "11.6%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Amarelo": {
+                "MG": {
+                    "Valor": 22,
+                    "Porcentagem": "0.4%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Indigena": {
+                "MG": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Jovens (10-29)": {
+                "MG": {
+                    "Valor": 49,
+                    "Porcentagem": "0.9%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "<10": {
+                "MG": {
+                    "Valor": 2,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "10-14": {
+                "MG": {
+                    "Valor": 2,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "15-19": {
+                "MG": {
+                    "Valor": 8,
+                    "Porcentagem": "0.2%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "20-24": {
+                "MG": {
+                    "Valor": 15,
+                    "Porcentagem": "0.3%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "25-29": {
+                "MG": {
+                    "Valor": 24,
+                    "Porcentagem": "0.5%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "30-34": {
+                "MG": {
+                    "Valor": 45,
+                    "Porcentagem": "0.9%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "35-39": {
+                "MG": {
+                    "Valor": 43,
+                    "Porcentagem": "0.8%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "40-44": {
+                "MG": {
+                    "Valor": 102,
+                    "Porcentagem": "2.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "45-49": {
+                "MG": {
+                    "Valor": 167,
+                    "Porcentagem": "3.2%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "50-54": {
+                "MG": {
+                    "Valor": 265,
+                    "Porcentagem": "5.1%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "14.3%"
+                }
+            },
+            "55-59": {
+                "MG": {
+                    "Valor": 405,
+                    "Porcentagem": "7.9%"
+                },
+                "Matipó": {
+                    "Valor": 2,
+                    "Porcentagem": "28.6%"
+                }
+            },
+            "60-64": {
+                "MG": {
+                    "Valor": 545,
+                    "Porcentagem": "10.6%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "14.3%"
+                }
+            },
+            "65-69": {
+                "MG": {
+                    "Valor": 625,
+                    "Porcentagem": "12.1%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "70-74": {
+                "MG": {
+                    "Valor": 694,
+                    "Porcentagem": "13.5%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "75-79": {
+                "MG": {
+                    "Valor": 729,
+                    "Porcentagem": "14.1%"
+                },
+                "Matipó": {
+                    "Valor": 3,
+                    "Porcentagem": "42.9%"
+                }
+            },
+            "80+": {
+                "MG": {
+                    "Valor": 1488,
+                    "Porcentagem": "28.8%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            }
+        },
+        "2018": {
+            "Obitos": {
+                "MG": {
+                    "Valor": 5879,
+                    "Porcentagem": "100.0%"
+                },
+                "Matipó": {
+                    "Valor": 5,
+                    "Porcentagem": "100.0%"
+                }
+            },
+            "Masculino": {
+                "MG": {
+                    "Valor": 2713,
+                    "Porcentagem": "46.1%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "20.0%"
+                }
+            },
+            "Feminino": {
+                "MG": {
+                    "Valor": 3166,
+                    "Porcentagem": "53.9%"
+                },
+                "Matipó": {
+                    "Valor": 4,
+                    "Porcentagem": "80.0%"
+                }
+            },
+            "Branco": {
+                "MG": {
+                    "Valor": 2889,
+                    "Porcentagem": "49.1%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "20.0%"
+                }
+            },
+            "Pardo": {
+                "MG": {
+                    "Valor": 2054,
+                    "Porcentagem": "34.9%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "20.0%"
+                }
+            },
+            "Preto": {
+                "MG": {
+                    "Valor": 778,
+                    "Porcentagem": "13.2%"
+                },
+                "Matipó": {
+                    "Valor": 3,
+                    "Porcentagem": "60.0%"
+                }
+            },
+            "Amarelo": {
+                "MG": {
+                    "Valor": 29,
+                    "Porcentagem": "0.5%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Indigena": {
+                "MG": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Jovens (10-29)": {
+                "MG": {
+                    "Valor": 66,
+                    "Porcentagem": "1.1%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "<10": {
+                "MG": {
+                    "Valor": 3,
+                    "Porcentagem": "0.1%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "10-14": {
+                "MG": {
+                    "Valor": 2,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "15-19": {
+                "MG": {
+                    "Valor": 9,
+                    "Porcentagem": "0.2%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "20-24": {
+                "MG": {
+                    "Valor": 27,
+                    "Porcentagem": "0.5%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "25-29": {
+                "MG": {
+                    "Valor": 28,
+                    "Porcentagem": "0.5%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "30-34": {
+                "MG": {
+                    "Valor": 36,
+                    "Porcentagem": "0.6%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "35-39": {
+                "MG": {
+                    "Valor": 58,
+                    "Porcentagem": "1.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "40-44": {
+                "MG": {
+                    "Valor": 111,
+                    "Porcentagem": "1.9%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "45-49": {
+                "MG": {
+                    "Valor": 196,
+                    "Porcentagem": "3.3%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "50-54": {
+                "MG": {
+                    "Valor": 290,
+                    "Porcentagem": "4.9%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "55-59": {
+                "MG": {
+                    "Valor": 457,
+                    "Porcentagem": "7.8%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "20.0%"
+                }
+            },
+            "60-64": {
+                "MG": {
+                    "Valor": 621,
+                    "Porcentagem": "10.6%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "65-69": {
+                "MG": {
+                    "Valor": 733,
+                    "Porcentagem": "12.5%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "20.0%"
+                }
+            },
+            "70-74": {
+                "MG": {
+                    "Valor": 809,
+                    "Porcentagem": "13.8%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "75-79": {
+                "MG": {
+                    "Valor": 787,
+                    "Porcentagem": "13.4%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "20.0%"
+                }
+            },
+            "80+": {
+                "MG": {
+                    "Valor": 1712,
+                    "Porcentagem": "29.1%"
+                },
+                "Matipó": {
+                    "Valor": 2,
+                    "Porcentagem": "40.0%"
+                }
+            }
+        },
+        "2021": {
+            "Obitos": {
+                "MG": {
+                    "Valor": 7287,
+                    "Porcentagem": "100.0%"
+                },
+                "Matipó": {
+                    "Valor": 6,
+                    "Porcentagem": "100.0%"
+                }
+            },
+            "Masculino": {
+                "MG": {
+                    "Valor": 3369,
+                    "Porcentagem": "46.2%"
+                },
+                "Matipó": {
+                    "Valor": 3,
+                    "Porcentagem": "50.0%"
+                }
+            },
+            "Feminino": {
+                "MG": {
+                    "Valor": 3918,
+                    "Porcentagem": "53.8%"
+                },
+                "Matipó": {
+                    "Valor": 3,
+                    "Porcentagem": "50.0%"
+                }
+            },
+            "Branco": {
+                "MG": {
+                    "Valor": 3571,
+                    "Porcentagem": "49.0%"
+                },
+                "Matipó": {
+                    "Valor": 4,
+                    "Porcentagem": "66.7%"
+                }
+            },
+            "Pardo": {
+                "MG": {
+                    "Valor": 2562,
+                    "Porcentagem": "35.2%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "16.7%"
+                }
+            },
+            "Preto": {
+                "MG": {
+                    "Valor": 999,
+                    "Porcentagem": "13.7%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "16.7%"
+                }
+            },
+            "Amarelo": {
+                "MG": {
+                    "Valor": 26,
+                    "Porcentagem": "0.4%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Indigena": {
+                "MG": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Jovens (10-29)": {
+                "MG": {
+                    "Valor": 65,
+                    "Porcentagem": "0.9%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "<10": {
+                "MG": {
+                    "Valor": 3,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "10-14": {
+                "MG": {
+                    "Valor": 2,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "15-19": {
+                "MG": {
+                    "Valor": 14,
+                    "Porcentagem": "0.2%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "20-24": {
+                "MG": {
+                    "Valor": 19,
+                    "Porcentagem": "0.3%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "25-29": {
+                "MG": {
+                    "Valor": 30,
+                    "Porcentagem": "0.4%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "30-34": {
+                "MG": {
+                    "Valor": 45,
+                    "Porcentagem": "0.6%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "35-39": {
+                "MG": {
+                    "Valor": 71,
+                    "Porcentagem": "1.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "40-44": {
+                "MG": {
+                    "Valor": 132,
+                    "Porcentagem": "1.8%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "45-49": {
+                "MG": {
+                    "Valor": 244,
+                    "Porcentagem": "3.3%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "50-54": {
+                "MG": {
+                    "Valor": 321,
+                    "Porcentagem": "4.4%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "55-59": {
+                "MG": {
+                    "Valor": 513,
+                    "Porcentagem": "7.0%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "16.7%"
+                }
+            },
+            "60-64": {
+                "MG": {
+                    "Valor": 751,
+                    "Porcentagem": "10.3%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "65-69": {
+                "MG": {
+                    "Valor": 927,
+                    "Porcentagem": "12.7%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "70-74": {
+                "MG": {
+                    "Valor": 1037,
+                    "Porcentagem": "14.2%"
+                },
+                "Matipó": {
+                    "Valor": 2,
+                    "Porcentagem": "33.3%"
+                }
+            },
+            "75-79": {
+                "MG": {
+                    "Valor": 972,
+                    "Porcentagem": "13.3%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "80+": {
+                "MG": {
+                    "Valor": 2206,
+                    "Porcentagem": "30.3%"
+                },
+                "Matipó": {
+                    "Valor": 3,
+                    "Porcentagem": "50.0%"
+                }
+            }
+        },
+        "2010": {
+            "Obitos": {
+                "MG": {
+                    "Valor": 4936,
+                    "Porcentagem": "100.0%"
+                },
+                "Matipó": {
+                    "Valor": 3,
+                    "Porcentagem": "100.0%"
+                }
+            },
+            "Masculino": {
+                "MG": {
+                    "Valor": 2128,
+                    "Porcentagem": "43.1%"
+                },
+                "Matipó": {
+                    "Valor": 2,
+                    "Porcentagem": "66.7%"
+                }
+            },
+            "Feminino": {
+                "MG": {
+                    "Valor": 2807,
+                    "Porcentagem": "56.9%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "33.3%"
+                }
+            },
+            "Branco": {
+                "MG": {
+                    "Valor": 2424,
+                    "Porcentagem": "49.1%"
+                },
+                "Matipó": {
+                    "Valor": 2,
+                    "Porcentagem": "66.7%"
+                }
+            },
+            "Pardo": {
+                "MG": {
+                    "Valor": 1361,
+                    "Porcentagem": "27.6%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Preto": {
+                "MG": {
+                    "Valor": 534,
+                    "Porcentagem": "10.8%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Amarelo": {
+                "MG": {
+                    "Valor": 11,
+                    "Porcentagem": "0.2%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Indigena": {
+                "MG": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Jovens (10-29)": {
+                "MG": {
+                    "Valor": 56,
+                    "Porcentagem": "1.1%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "<10": {
+                "MG": {
+                    "Valor": 2,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "10-14": {
+                "MG": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "15-19": {
+                "MG": {
+                    "Valor": 19,
+                    "Porcentagem": "0.4%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "20-24": {
+                "MG": {
+                    "Valor": 14,
+                    "Porcentagem": "0.3%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "25-29": {
+                "MG": {
+                    "Valor": 23,
+                    "Porcentagem": "0.5%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "30-34": {
+                "MG": {
+                    "Valor": 45,
+                    "Porcentagem": "0.9%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "35-39": {
+                "MG": {
+                    "Valor": 67,
+                    "Porcentagem": "1.4%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "40-44": {
+                "MG": {
+                    "Valor": 112,
+                    "Porcentagem": "2.3%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "45-49": {
+                "MG": {
+                    "Valor": 155,
+                    "Porcentagem": "3.1%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "50-54": {
+                "MG": {
+                    "Valor": 251,
+                    "Porcentagem": "5.1%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "33.3%"
+                }
+            },
+            "55-59": {
+                "MG": {
+                    "Valor": 388,
+                    "Porcentagem": "7.9%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "60-64": {
+                "MG": {
+                    "Valor": 546,
+                    "Porcentagem": "11.1%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "33.3%"
+                }
+            },
+            "65-69": {
+                "MG": {
+                    "Valor": 589,
+                    "Porcentagem": "11.9%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "70-74": {
+                "MG": {
+                    "Valor": 671,
+                    "Porcentagem": "13.6%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "75-79": {
+                "MG": {
+                    "Valor": 704,
+                    "Porcentagem": "14.3%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "33.3%"
+                }
+            },
+            "80+": {
+                "MG": {
+                    "Valor": 1350,
+                    "Porcentagem": "27.4%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            }
+        },
+        "2013": {
+            "Obitos": {
+                "MG": {
+                    "Valor": 5190,
+                    "Porcentagem": "100.0%"
+                },
+                "Matipó": {
+                    "Valor": 6,
+                    "Porcentagem": "100.0%"
+                }
+            },
+            "Masculino": {
+                "MG": {
+                    "Valor": 2202,
+                    "Porcentagem": "42.4%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "16.7%"
+                }
+            },
+            "Feminino": {
+                "MG": {
+                    "Valor": 2988,
+                    "Porcentagem": "57.6%"
+                },
+                "Matipó": {
+                    "Valor": 5,
+                    "Porcentagem": "83.3%"
+                }
+            },
+            "Branco": {
+                "MG": {
+                    "Valor": 2555,
+                    "Porcentagem": "49.2%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "16.7%"
+                }
+            },
+            "Pardo": {
+                "MG": {
+                    "Valor": 1457,
+                    "Porcentagem": "28.1%"
+                },
+                "Matipó": {
+                    "Valor": 2,
+                    "Porcentagem": "33.3%"
+                }
+            },
+            "Preto": {
+                "MG": {
+                    "Valor": 612,
+                    "Porcentagem": "11.8%"
+                },
+                "Matipó": {
+                    "Valor": 2,
+                    "Porcentagem": "33.3%"
+                }
+            },
+            "Amarelo": {
+                "MG": {
+                    "Valor": 17,
+                    "Porcentagem": "0.3%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Indigena": {
+                "MG": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Jovens (10-29)": {
+                "MG": {
+                    "Valor": 46,
+                    "Porcentagem": "0.9%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "<10": {
+                "MG": {
+                    "Valor": 5,
+                    "Porcentagem": "0.1%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "10-14": {
+                "MG": {
+                    "Valor": 3,
+                    "Porcentagem": "0.1%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "15-19": {
+                "MG": {
+                    "Valor": 9,
+                    "Porcentagem": "0.2%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "20-24": {
+                "MG": {
+                    "Valor": 8,
+                    "Porcentagem": "0.2%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "25-29": {
+                "MG": {
+                    "Valor": 26,
+                    "Porcentagem": "0.5%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "30-34": {
+                "MG": {
+                    "Valor": 30,
+                    "Porcentagem": "0.6%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "35-39": {
+                "MG": {
+                    "Valor": 65,
+                    "Porcentagem": "1.3%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "40-44": {
+                "MG": {
+                    "Valor": 112,
+                    "Porcentagem": "2.2%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "16.7%"
+                }
+            },
+            "45-49": {
+                "MG": {
+                    "Valor": 174,
+                    "Porcentagem": "3.4%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "50-54": {
+                "MG": {
+                    "Valor": 264,
+                    "Porcentagem": "5.1%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "55-59": {
+                "MG": {
+                    "Valor": 393,
+                    "Porcentagem": "7.6%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "60-64": {
+                "MG": {
+                    "Valor": 546,
+                    "Porcentagem": "10.5%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "65-69": {
+                "MG": {
+                    "Valor": 647,
+                    "Porcentagem": "12.5%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "70-74": {
+                "MG": {
+                    "Valor": 700,
+                    "Porcentagem": "13.5%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "75-79": {
+                "MG": {
+                    "Valor": 756,
+                    "Porcentagem": "14.6%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "80+": {
+                "MG": {
+                    "Valor": 1451,
+                    "Porcentagem": "28.0%"
+                },
+                "Matipó": {
+                    "Valor": 5,
+                    "Porcentagem": "83.3%"
+                }
+            }
+        },
+        "2023": {
+            "Obitos": {
+                "MG": {
+                    "Valor": 6422,
+                    "Porcentagem": "100.0%"
+                },
+                "Matipó": {
+                    "Valor": 12,
+                    "Porcentagem": "100.0%"
+                }
+            },
+            "Masculino": {
+                "MG": {
+                    "Valor": 2870,
+                    "Porcentagem": "44.7%"
+                },
+                "Matipó": {
+                    "Valor": 9,
+                    "Porcentagem": "75.0%"
+                }
+            },
+            "Feminino": {
+                "MG": {
+                    "Valor": 3551,
+                    "Porcentagem": "55.3%"
+                },
+                "Matipó": {
+                    "Valor": 3,
+                    "Porcentagem": "25.0%"
+                }
+            },
+            "Branco": {
+                "MG": {
+                    "Valor": 3124,
+                    "Porcentagem": "48.6%"
+                },
+                "Matipó": {
+                    "Valor": 4,
+                    "Porcentagem": "33.3%"
+                }
+            },
+            "Pardo": {
+                "MG": {
+                    "Valor": 2292,
+                    "Porcentagem": "35.7%"
+                },
+                "Matipó": {
+                    "Valor": 3,
+                    "Porcentagem": "25.0%"
+                }
+            },
+            "Preto": {
+                "MG": {
+                    "Valor": 887,
+                    "Porcentagem": "13.8%"
+                },
+                "Matipó": {
+                    "Valor": 4,
+                    "Porcentagem": "33.3%"
+                }
+            },
+            "Amarelo": {
+                "MG": {
+                    "Valor": 20,
+                    "Porcentagem": "0.3%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "8.3%"
+                }
+            },
+            "Indigena": {
+                "MG": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Jovens (10-29)": {
+                "MG": {
+                    "Valor": 46,
+                    "Porcentagem": "0.7%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "<10": {
+                "MG": {
+                    "Valor": 1,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "10-14": {
+                "MG": {
+                    "Valor": 2,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "15-19": {
+                "MG": {
+                    "Valor": 7,
+                    "Porcentagem": "0.1%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "20-24": {
+                "MG": {
+                    "Valor": 14,
+                    "Porcentagem": "0.2%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "25-29": {
+                "MG": {
+                    "Valor": 23,
+                    "Porcentagem": "0.4%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "30-34": {
+                "MG": {
+                    "Valor": 48,
+                    "Porcentagem": "0.7%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "35-39": {
+                "MG": {
+                    "Valor": 83,
+                    "Porcentagem": "1.3%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "40-44": {
+                "MG": {
+                    "Valor": 105,
+                    "Porcentagem": "1.6%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "45-49": {
+                "MG": {
+                    "Valor": 181,
+                    "Porcentagem": "2.8%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "8.3%"
+                }
+            },
+            "50-54": {
+                "MG": {
+                    "Valor": 285,
+                    "Porcentagem": "4.4%"
+                },
+                "Matipó": {
+                    "Valor": 3,
+                    "Porcentagem": "25.0%"
+                }
+            },
+            "55-59": {
+                "MG": {
+                    "Valor": 446,
+                    "Porcentagem": "6.9%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "60-64": {
+                "MG": {
+                    "Valor": 590,
+                    "Porcentagem": "9.2%"
+                },
+                "Matipó": {
+                    "Valor": 3,
+                    "Porcentagem": "25.0%"
+                }
+            },
+            "65-69": {
+                "MG": {
+                    "Valor": 759,
+                    "Porcentagem": "11.8%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "8.3%"
+                }
+            },
+            "70-74": {
+                "MG": {
+                    "Valor": 876,
+                    "Porcentagem": "13.6%"
+                },
+                "Matipó": {
+                    "Valor": 2,
+                    "Porcentagem": "16.7%"
+                }
+            },
+            "75-79": {
+                "MG": {
+                    "Valor": 941,
+                    "Porcentagem": "14.7%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "80+": {
+                "MG": {
+                    "Valor": 2061,
+                    "Porcentagem": "32.1%"
+                },
+                "Matipó": {
+                    "Valor": 2,
+                    "Porcentagem": "16.7%"
+                }
+            }
+        },
+        "2017": {
+            "Obitos": {
+                "MG": {
+                    "Valor": 5745,
+                    "Porcentagem": "100.0%"
+                },
+                "Matipó": {
+                    "Valor": 6,
+                    "Porcentagem": "100.0%"
+                }
+            },
+            "Masculino": {
+                "MG": {
+                    "Valor": 2578,
+                    "Porcentagem": "44.9%"
+                },
+                "Matipó": {
+                    "Valor": 3,
+                    "Porcentagem": "50.0%"
+                }
+            },
+            "Feminino": {
+                "MG": {
+                    "Valor": 3167,
+                    "Porcentagem": "55.1%"
+                },
+                "Matipó": {
+                    "Valor": 3,
+                    "Porcentagem": "50.0%"
+                }
+            },
+            "Branco": {
+                "MG": {
+                    "Valor": 2762,
+                    "Porcentagem": "48.1%"
+                },
+                "Matipó": {
+                    "Valor": 3,
+                    "Porcentagem": "50.0%"
+                }
+            },
+            "Pardo": {
+                "MG": {
+                    "Valor": 2059,
+                    "Porcentagem": "35.8%"
+                },
+                "Matipó": {
+                    "Valor": 2,
+                    "Porcentagem": "33.3%"
+                }
+            },
+            "Preto": {
+                "MG": {
+                    "Valor": 716,
+                    "Porcentagem": "12.5%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "16.7%"
+                }
+            },
+            "Amarelo": {
+                "MG": {
+                    "Valor": 23,
+                    "Porcentagem": "0.4%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Indigena": {
+                "MG": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Jovens (10-29)": {
+                "MG": {
+                    "Valor": 64,
+                    "Porcentagem": "1.1%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "<10": {
+                "MG": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "10-14": {
+                "MG": {
+                    "Valor": 1,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "15-19": {
+                "MG": {
+                    "Valor": 11,
+                    "Porcentagem": "0.2%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "20-24": {
+                "MG": {
+                    "Valor": 16,
+                    "Porcentagem": "0.3%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "25-29": {
+                "MG": {
+                    "Valor": 36,
+                    "Porcentagem": "0.6%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "30-34": {
+                "MG": {
+                    "Valor": 43,
+                    "Porcentagem": "0.7%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "35-39": {
+                "MG": {
+                    "Valor": 65,
+                    "Porcentagem": "1.1%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "40-44": {
+                "MG": {
+                    "Valor": 103,
+                    "Porcentagem": "1.8%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "16.7%"
+                }
+            },
+            "45-49": {
+                "MG": {
+                    "Valor": 183,
+                    "Porcentagem": "3.2%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "50-54": {
+                "MG": {
+                    "Valor": 308,
+                    "Porcentagem": "5.4%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "16.7%"
+                }
+            },
+            "55-59": {
+                "MG": {
+                    "Valor": 417,
+                    "Porcentagem": "7.3%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "60-64": {
+                "MG": {
+                    "Valor": 608,
+                    "Porcentagem": "10.6%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "16.7%"
+                }
+            },
+            "65-69": {
+                "MG": {
+                    "Valor": 727,
+                    "Porcentagem": "12.7%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "70-74": {
+                "MG": {
+                    "Valor": 754,
+                    "Porcentagem": "13.1%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "75-79": {
+                "MG": {
+                    "Valor": 784,
+                    "Porcentagem": "13.6%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "16.7%"
+                }
+            },
+            "80+": {
+                "MG": {
+                    "Valor": 1689,
+                    "Porcentagem": "29.4%"
+                },
+                "Matipó": {
+                    "Valor": 2,
+                    "Porcentagem": "33.3%"
+                }
+            }
+        },
+        "2011": {
+            "Obitos": {
+                "MG": {
+                    "Valor": 4987,
+                    "Porcentagem": "100.0%"
+                },
+                "Matipó": {
+                    "Valor": 6,
+                    "Porcentagem": "100.0%"
+                }
+            },
+            "Masculino": {
+                "MG": {
+                    "Valor": 2111,
+                    "Porcentagem": "42.3%"
+                },
+                "Matipó": {
+                    "Valor": 2,
+                    "Porcentagem": "33.3%"
+                }
+            },
+            "Feminino": {
+                "MG": {
+                    "Valor": 2875,
+                    "Porcentagem": "57.6%"
+                },
+                "Matipó": {
+                    "Valor": 4,
+                    "Porcentagem": "66.7%"
+                }
+            },
+            "Branco": {
+                "MG": {
+                    "Valor": 2465,
+                    "Porcentagem": "49.4%"
+                },
+                "Matipó": {
+                    "Valor": 3,
+                    "Porcentagem": "50.0%"
+                }
+            },
+            "Pardo": {
+                "MG": {
+                    "Valor": 1428,
+                    "Porcentagem": "28.6%"
+                },
+                "Matipó": {
+                    "Valor": 3,
+                    "Porcentagem": "50.0%"
+                }
+            },
+            "Preto": {
+                "MG": {
+                    "Valor": 559,
+                    "Porcentagem": "11.2%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Amarelo": {
+                "MG": {
+                    "Valor": 28,
+                    "Porcentagem": "0.6%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Indigena": {
+                "MG": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Jovens (10-29)": {
+                "MG": {
+                    "Valor": 48,
+                    "Porcentagem": "1.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "<10": {
+                "MG": {
+                    "Valor": 4,
+                    "Porcentagem": "0.1%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "10-14": {
+                "MG": {
+                    "Valor": 1,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "15-19": {
+                "MG": {
+                    "Valor": 7,
+                    "Porcentagem": "0.1%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "20-24": {
+                "MG": {
+                    "Valor": 13,
+                    "Porcentagem": "0.3%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "25-29": {
+                "MG": {
+                    "Valor": 27,
+                    "Porcentagem": "0.5%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "30-34": {
+                "MG": {
+                    "Valor": 47,
+                    "Porcentagem": "0.9%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "35-39": {
+                "MG": {
+                    "Valor": 67,
+                    "Porcentagem": "1.3%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "40-44": {
+                "MG": {
+                    "Valor": 95,
+                    "Porcentagem": "1.9%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "45-49": {
+                "MG": {
+                    "Valor": 160,
+                    "Porcentagem": "3.2%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "16.7%"
+                }
+            },
+            "50-54": {
+                "MG": {
+                    "Valor": 278,
+                    "Porcentagem": "5.6%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "55-59": {
+                "MG": {
+                    "Valor": 443,
+                    "Porcentagem": "8.9%"
+                },
+                "Matipó": {
+                    "Valor": 2,
+                    "Porcentagem": "33.3%"
+                }
+            },
+            "60-64": {
+                "MG": {
+                    "Valor": 532,
+                    "Porcentagem": "10.7%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "16.7%"
+                }
+            },
+            "65-69": {
+                "MG": {
+                    "Valor": 617,
+                    "Porcentagem": "12.4%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "16.7%"
+                }
+            },
+            "70-74": {
+                "MG": {
+                    "Valor": 710,
+                    "Porcentagem": "14.2%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "75-79": {
+                "MG": {
+                    "Valor": 720,
+                    "Porcentagem": "14.4%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "80+": {
+                "MG": {
+                    "Valor": 1266,
+                    "Porcentagem": "25.4%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "16.7%"
+                }
+            }
+        },
+        "2015": {
+            "Obitos": {
+                "MG": {
+                    "Valor": 5157,
+                    "Porcentagem": "100.0%"
+                },
+                "Matipó": {
+                    "Valor": 5,
+                    "Porcentagem": "100.0%"
+                }
+            },
+            "Masculino": {
+                "MG": {
+                    "Valor": 2246,
+                    "Porcentagem": "43.6%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "20.0%"
+                }
+            },
+            "Feminino": {
+                "MG": {
+                    "Valor": 2909,
+                    "Porcentagem": "56.4%"
+                },
+                "Matipó": {
+                    "Valor": 4,
+                    "Porcentagem": "80.0%"
+                }
+            },
+            "Branco": {
+                "MG": {
+                    "Valor": 2467,
+                    "Porcentagem": "47.8%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "20.0%"
+                }
+            },
+            "Pardo": {
+                "MG": {
+                    "Valor": 1591,
+                    "Porcentagem": "30.9%"
+                },
+                "Matipó": {
+                    "Valor": 4,
+                    "Porcentagem": "80.0%"
+                }
+            },
+            "Preto": {
+                "MG": {
+                    "Valor": 630,
+                    "Porcentagem": "12.2%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Amarelo": {
+                "MG": {
+                    "Valor": 12,
+                    "Porcentagem": "0.2%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Indigena": {
+                "MG": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Jovens (10-29)": {
+                "MG": {
+                    "Valor": 49,
+                    "Porcentagem": "1.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "<10": {
+                "MG": {
+                    "Valor": 6,
+                    "Porcentagem": "0.1%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "10-14": {
+                "MG": {
+                    "Valor": 2,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "15-19": {
+                "MG": {
+                    "Valor": 10,
+                    "Porcentagem": "0.2%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "20-24": {
+                "MG": {
+                    "Valor": 15,
+                    "Porcentagem": "0.3%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "25-29": {
+                "MG": {
+                    "Valor": 22,
+                    "Porcentagem": "0.4%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "30-34": {
+                "MG": {
+                    "Valor": 37,
+                    "Porcentagem": "0.7%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "35-39": {
+                "MG": {
+                    "Valor": 77,
+                    "Porcentagem": "1.5%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "40-44": {
+                "MG": {
+                    "Valor": 89,
+                    "Porcentagem": "1.7%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "20.0%"
+                }
+            },
+            "45-49": {
+                "MG": {
+                    "Valor": 158,
+                    "Porcentagem": "3.1%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "50-54": {
+                "MG": {
+                    "Valor": 243,
+                    "Porcentagem": "4.7%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "55-59": {
+                "MG": {
+                    "Valor": 438,
+                    "Porcentagem": "8.5%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "60-64": {
+                "MG": {
+                    "Valor": 553,
+                    "Porcentagem": "10.7%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "65-69": {
+                "MG": {
+                    "Valor": 676,
+                    "Porcentagem": "13.1%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "20.0%"
+                }
+            },
+            "70-74": {
+                "MG": {
+                    "Valor": 662,
+                    "Porcentagem": "12.8%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "75-79": {
+                "MG": {
+                    "Valor": 731,
+                    "Porcentagem": "14.2%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "20.0%"
+                }
+            },
+            "80+": {
+                "MG": {
+                    "Valor": 1437,
+                    "Porcentagem": "27.9%"
+                },
+                "Matipó": {
+                    "Valor": 2,
+                    "Porcentagem": "40.0%"
+                }
+            }
+        },
+        "2022": {
+            "Obitos": {
+                "MG": {
+                    "Valor": 7117,
+                    "Porcentagem": "100.0%"
+                },
+                "Matipó": {
+                    "Valor": 2,
+                    "Porcentagem": "100.0%"
+                }
+            },
+            "Masculino": {
+                "MG": {
+                    "Valor": 3241,
+                    "Porcentagem": "45.5%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Feminino": {
+                "MG": {
+                    "Valor": 3876,
+                    "Porcentagem": "54.5%"
+                },
+                "Matipó": {
+                    "Valor": 2,
+                    "Porcentagem": "100.0%"
+                }
+            },
+            "Branco": {
+                "MG": {
+                    "Valor": 3479,
+                    "Porcentagem": "48.9%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "50.0%"
+                }
+            },
+            "Pardo": {
+                "MG": {
+                    "Valor": 2484,
+                    "Porcentagem": "34.9%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "50.0%"
+                }
+            },
+            "Preto": {
+                "MG": {
+                    "Valor": 990,
+                    "Porcentagem": "13.9%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Amarelo": {
+                "MG": {
+                    "Valor": 26,
+                    "Porcentagem": "0.4%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Indigena": {
+                "MG": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Jovens (10-29)": {
+                "MG": {
+                    "Valor": 59,
+                    "Porcentagem": "0.8%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "<10": {
+                "MG": {
+                    "Valor": 4,
+                    "Porcentagem": "0.1%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "10-14": {
+                "MG": {
+                    "Valor": 1,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "15-19": {
+                "MG": {
+                    "Valor": 8,
+                    "Porcentagem": "0.1%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "20-24": {
+                "MG": {
+                    "Valor": 17,
+                    "Porcentagem": "0.2%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "25-29": {
+                "MG": {
+                    "Valor": 33,
+                    "Porcentagem": "0.5%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "30-34": {
+                "MG": {
+                    "Valor": 38,
+                    "Porcentagem": "0.5%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "35-39": {
+                "MG": {
+                    "Valor": 71,
+                    "Porcentagem": "1.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "40-44": {
+                "MG": {
+                    "Valor": 146,
+                    "Porcentagem": "2.1%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "45-49": {
+                "MG": {
+                    "Valor": 206,
+                    "Porcentagem": "2.9%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "50-54": {
+                "MG": {
+                    "Valor": 340,
+                    "Porcentagem": "4.8%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "50.0%"
+                }
+            },
+            "55-59": {
+                "MG": {
+                    "Valor": 483,
+                    "Porcentagem": "6.8%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "60-64": {
+                "MG": {
+                    "Valor": 689,
+                    "Porcentagem": "9.7%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "65-69": {
+                "MG": {
+                    "Valor": 914,
+                    "Porcentagem": "12.8%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "50.0%"
+                }
+            },
+            "70-74": {
+                "MG": {
+                    "Valor": 977,
+                    "Porcentagem": "13.7%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "75-79": {
+                "MG": {
+                    "Valor": 934,
+                    "Porcentagem": "13.1%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "80+": {
+                "MG": {
+                    "Valor": 2256,
+                    "Porcentagem": "31.7%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            }
+        },
+        "2024": {
+            "Obitos": {
+                "MG": {
+                    "Valor": 6915,
+                    "Porcentagem": "100.0%"
+                },
+                "Matipó": {
+                    "Valor": 5,
+                    "Porcentagem": "100.0%"
+                }
+            },
+            "Masculino": {
+                "MG": {
+                    "Valor": 3165,
+                    "Porcentagem": "45.8%"
+                },
+                "Matipó": {
+                    "Valor": 2,
+                    "Porcentagem": "40.0%"
+                }
+            },
+            "Feminino": {
+                "MG": {
+                    "Valor": 3750,
+                    "Porcentagem": "54.2%"
+                },
+                "Matipó": {
+                    "Valor": 3,
+                    "Porcentagem": "60.0%"
+                }
+            },
+            "Branco": {
+                "MG": {
+                    "Valor": 3277,
+                    "Porcentagem": "47.4%"
+                },
+                "Matipó": {
+                    "Valor": 3,
+                    "Porcentagem": "60.0%"
+                }
+            },
+            "Pardo": {
+                "MG": {
+                    "Valor": 2491,
+                    "Porcentagem": "36.0%"
+                },
+                "Matipó": {
+                    "Valor": 2,
+                    "Porcentagem": "40.0%"
+                }
+            },
+            "Preto": {
+                "MG": {
+                    "Valor": 1009,
+                    "Porcentagem": "14.6%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Amarelo": {
+                "MG": {
+                    "Valor": 22,
+                    "Porcentagem": "0.3%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Indigena": {
+                "MG": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Jovens (10-29)": {
+                "MG": {
+                    "Valor": 54,
+                    "Porcentagem": "0.8%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "<10": {
+                "MG": {
+                    "Valor": 3,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "10-14": {
+                "MG": {
+                    "Valor": 3,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "15-19": {
+                "MG": {
+                    "Valor": 10,
+                    "Porcentagem": "0.1%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "20-24": {
+                "MG": {
+                    "Valor": 13,
+                    "Porcentagem": "0.2%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "25-29": {
+                "MG": {
+                    "Valor": 28,
+                    "Porcentagem": "0.4%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "30-34": {
+                "MG": {
+                    "Valor": 45,
+                    "Porcentagem": "0.7%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "35-39": {
+                "MG": {
+                    "Valor": 86,
+                    "Porcentagem": "1.2%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "20.0%"
+                }
+            },
+            "40-44": {
+                "MG": {
+                    "Valor": 132,
+                    "Porcentagem": "1.9%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "45-49": {
+                "MG": {
+                    "Valor": 200,
+                    "Porcentagem": "2.9%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "50-54": {
+                "MG": {
+                    "Valor": 261,
+                    "Porcentagem": "3.8%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "55-59": {
+                "MG": {
+                    "Valor": 465,
+                    "Porcentagem": "6.7%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "60-64": {
+                "MG": {
+                    "Valor": 658,
+                    "Porcentagem": "9.5%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "20.0%"
+                }
+            },
+            "65-69": {
+                "MG": {
+                    "Valor": 882,
+                    "Porcentagem": "12.8%"
+                },
+                "Matipó": {
+                    "Valor": 2,
+                    "Porcentagem": "40.0%"
+                }
+            },
+            "70-74": {
+                "MG": {
+                    "Valor": 962,
+                    "Porcentagem": "13.9%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "75-79": {
+                "MG": {
+                    "Valor": 936,
+                    "Porcentagem": "13.5%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "80+": {
+                "MG": {
+                    "Valor": 2230,
+                    "Porcentagem": "32.2%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "20.0%"
+                }
+            }
+        },
+        "2012": {
+            "Obitos": {
+                "MG": {
+                    "Valor": 5190,
+                    "Porcentagem": "100.0%"
+                },
+                "Matipó": {
+                    "Valor": 9,
+                    "Porcentagem": "100.0%"
+                }
+            },
+            "Masculino": {
+                "MG": {
+                    "Valor": 2205,
+                    "Porcentagem": "42.5%"
+                },
+                "Matipó": {
+                    "Valor": 4,
+                    "Porcentagem": "44.4%"
+                }
+            },
+            "Feminino": {
+                "MG": {
+                    "Valor": 2984,
+                    "Porcentagem": "57.5%"
+                },
+                "Matipó": {
+                    "Valor": 5,
+                    "Porcentagem": "55.6%"
+                }
+            },
+            "Branco": {
+                "MG": {
+                    "Valor": 2578,
+                    "Porcentagem": "49.7%"
+                },
+                "Matipó": {
+                    "Valor": 3,
+                    "Porcentagem": "33.3%"
+                }
+            },
+            "Pardo": {
+                "MG": {
+                    "Valor": 1537,
+                    "Porcentagem": "29.6%"
+                },
+                "Matipó": {
+                    "Valor": 3,
+                    "Porcentagem": "33.3%"
+                }
+            },
+            "Preto": {
+                "MG": {
+                    "Valor": 596,
+                    "Porcentagem": "11.5%"
+                },
+                "Matipó": {
+                    "Valor": 2,
+                    "Porcentagem": "22.2%"
+                }
+            },
+            "Amarelo": {
+                "MG": {
+                    "Valor": 27,
+                    "Porcentagem": "0.5%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Indigena": {
+                "MG": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Jovens (10-29)": {
+                "MG": {
+                    "Valor": 58,
+                    "Porcentagem": "1.1%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "11.1%"
+                }
+            },
+            "<10": {
+                "MG": {
+                    "Valor": 3,
+                    "Porcentagem": "0.1%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "10-14": {
+                "MG": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "15-19": {
+                "MG": {
+                    "Valor": 11,
+                    "Porcentagem": "0.2%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "20-24": {
+                "MG": {
+                    "Valor": 18,
+                    "Porcentagem": "0.3%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "25-29": {
+                "MG": {
+                    "Valor": 29,
+                    "Porcentagem": "0.6%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "11.1%"
+                }
+            },
+            "30-34": {
+                "MG": {
+                    "Valor": 59,
+                    "Porcentagem": "1.1%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "35-39": {
+                "MG": {
+                    "Valor": 60,
+                    "Porcentagem": "1.2%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "40-44": {
+                "MG": {
+                    "Valor": 105,
+                    "Porcentagem": "2.0%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "11.1%"
+                }
+            },
+            "45-49": {
+                "MG": {
+                    "Valor": 168,
+                    "Porcentagem": "3.2%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "50-54": {
+                "MG": {
+                    "Valor": 302,
+                    "Porcentagem": "5.8%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "55-59": {
+                "MG": {
+                    "Valor": 399,
+                    "Porcentagem": "7.7%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "11.1%"
+                }
+            },
+            "60-64": {
+                "MG": {
+                    "Valor": 576,
+                    "Porcentagem": "11.1%"
+                },
+                "Matipó": {
+                    "Valor": 2,
+                    "Porcentagem": "22.2%"
+                }
+            },
+            "65-69": {
+                "MG": {
+                    "Valor": 627,
+                    "Porcentagem": "12.1%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "11.1%"
+                }
+            },
+            "70-74": {
+                "MG": {
+                    "Valor": 701,
+                    "Porcentagem": "13.5%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "75-79": {
+                "MG": {
+                    "Valor": 726,
+                    "Porcentagem": "14.0%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "11.1%"
+                }
+            },
+            "80+": {
+                "MG": {
+                    "Valor": 1404,
+                    "Porcentagem": "27.1%"
+                },
+                "Matipó": {
+                    "Valor": 2,
+                    "Porcentagem": "22.2%"
+                }
+            }
+        },
+        "2020": {
+            "Obitos": {
+                "MG": {
+                    "Valor": 6598,
+                    "Porcentagem": "100.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Masculino": {
+                "MG": {
+                    "Valor": 3034,
+                    "Porcentagem": "46.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Feminino": {
+                "MG": {
+                    "Valor": 3564,
+                    "Porcentagem": "54.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Branco": {
+                "MG": {
+                    "Valor": 3168,
+                    "Porcentagem": "48.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Pardo": {
+                "MG": {
+                    "Valor": 2392,
+                    "Porcentagem": "36.3%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Preto": {
+                "MG": {
+                    "Valor": 887,
+                    "Porcentagem": "13.4%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Amarelo": {
+                "MG": {
+                    "Valor": 30,
+                    "Porcentagem": "0.5%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Indigena": {
+                "MG": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Jovens (10-29)": {
+                "MG": {
+                    "Valor": 66,
+                    "Porcentagem": "1.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "<10": {
+                "MG": {
+                    "Valor": 1,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "10-14": {
+                "MG": {
+                    "Valor": 3,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "15-19": {
+                "MG": {
+                    "Valor": 8,
+                    "Porcentagem": "0.1%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "20-24": {
+                "MG": {
+                    "Valor": 17,
+                    "Porcentagem": "0.3%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "25-29": {
+                "MG": {
+                    "Valor": 38,
+                    "Porcentagem": "0.6%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "30-34": {
+                "MG": {
+                    "Valor": 59,
+                    "Porcentagem": "0.9%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "35-39": {
+                "MG": {
+                    "Valor": 75,
+                    "Porcentagem": "1.1%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "40-44": {
+                "MG": {
+                    "Valor": 137,
+                    "Porcentagem": "2.1%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "45-49": {
+                "MG": {
+                    "Valor": 187,
+                    "Porcentagem": "2.8%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "50-54": {
+                "MG": {
+                    "Valor": 327,
+                    "Porcentagem": "5.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "55-59": {
+                "MG": {
+                    "Valor": 488,
+                    "Porcentagem": "7.4%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "60-64": {
+                "MG": {
+                    "Valor": 697,
+                    "Porcentagem": "10.6%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "65-69": {
+                "MG": {
+                    "Valor": 836,
+                    "Porcentagem": "12.7%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "70-74": {
+                "MG": {
+                    "Valor": 899,
+                    "Porcentagem": "13.6%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "75-79": {
+                "MG": {
+                    "Valor": 885,
+                    "Porcentagem": "13.4%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "80+": {
+                "MG": {
+                    "Valor": 1941,
+                    "Porcentagem": "29.4%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            }
+        },
+        "2025": {
+            "Obitos": {
+                "MG": {
+                    "Valor": 6487,
+                    "Porcentagem": "100.0%"
+                },
+                "Matipó": {
+                    "Valor": 6,
+                    "Porcentagem": "100.0%"
+                }
+            },
+            "Masculino": {
+                "MG": {
+                    "Valor": 2999,
+                    "Porcentagem": "46.2%"
+                },
+                "Matipó": {
+                    "Valor": 3,
+                    "Porcentagem": "50.0%"
+                }
+            },
+            "Feminino": {
+                "MG": {
+                    "Valor": 3488,
+                    "Porcentagem": "53.8%"
+                },
+                "Matipó": {
+                    "Valor": 3,
+                    "Porcentagem": "50.0%"
+                }
+            },
+            "Branco": {
+                "MG": {
+                    "Valor": 3090,
+                    "Porcentagem": "47.6%"
+                },
+                "Matipó": {
+                    "Valor": 2,
+                    "Porcentagem": "33.3%"
+                }
+            },
+            "Pardo": {
+                "MG": {
+                    "Valor": 2345,
+                    "Porcentagem": "36.1%"
+                },
+                "Matipó": {
+                    "Valor": 3,
+                    "Porcentagem": "50.0%"
+                }
+            },
+            "Preto": {
+                "MG": {
+                    "Valor": 932,
+                    "Porcentagem": "14.4%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "16.7%"
+                }
+            },
+            "Amarelo": {
+                "MG": {
+                    "Valor": 24,
+                    "Porcentagem": "0.4%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Indigena": {
+                "MG": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Jovens (10-29)": {
+                "MG": {
+                    "Valor": 49,
+                    "Porcentagem": "0.8%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "<10": {
+                "MG": {
+                    "Valor": 2,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "10-14": {
+                "MG": {
+                    "Valor": 3,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "15-19": {
+                "MG": {
+                    "Valor": 4,
+                    "Porcentagem": "0.1%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "20-24": {
+                "MG": {
+                    "Valor": 23,
+                    "Porcentagem": "0.4%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "25-29": {
+                "MG": {
+                    "Valor": 19,
+                    "Porcentagem": "0.3%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "30-34": {
+                "MG": {
+                    "Valor": 39,
+                    "Porcentagem": "0.6%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "16.7%"
+                }
+            },
+            "35-39": {
+                "MG": {
+                    "Valor": 62,
+                    "Porcentagem": "1.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "40-44": {
+                "MG": {
+                    "Valor": 117,
+                    "Porcentagem": "1.8%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "45-49": {
+                "MG": {
+                    "Valor": 189,
+                    "Porcentagem": "2.9%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "16.7%"
+                }
+            },
+            "50-54": {
+                "MG": {
+                    "Valor": 301,
+                    "Porcentagem": "4.6%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "16.7%"
+                }
+            },
+            "55-59": {
+                "MG": {
+                    "Valor": 455,
+                    "Porcentagem": "7.0%"
+                },
+                "Matipó": {
+                    "Valor": 2,
+                    "Porcentagem": "33.3%"
+                }
+            },
+            "60-64": {
+                "MG": {
+                    "Valor": 610,
+                    "Porcentagem": "9.4%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "65-69": {
+                "MG": {
+                    "Valor": 784,
+                    "Porcentagem": "12.1%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "70-74": {
+                "MG": {
+                    "Valor": 931,
+                    "Porcentagem": "14.4%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "16.7%"
+                }
+            },
+            "75-79": {
+                "MG": {
+                    "Valor": 899,
+                    "Porcentagem": "13.9%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "80+": {
+                "MG": {
+                    "Valor": 2048,
+                    "Porcentagem": "31.6%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            }
+        },
+        "2019": {
+            "Obitos": {
+                "MG": {
+                    "Valor": 6192,
+                    "Porcentagem": "100.0%"
+                },
+                "Matipó": {
+                    "Valor": 5,
+                    "Porcentagem": "100.0%"
+                }
+            },
+            "Masculino": {
+                "MG": {
+                    "Valor": 2816,
+                    "Porcentagem": "45.5%"
+                },
+                "Matipó": {
+                    "Valor": 4,
+                    "Porcentagem": "80.0%"
+                }
+            },
+            "Feminino": {
+                "MG": {
+                    "Valor": 3376,
+                    "Porcentagem": "54.5%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "20.0%"
+                }
+            },
+            "Branco": {
+                "MG": {
+                    "Valor": 3000,
+                    "Porcentagem": "48.4%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "20.0%"
+                }
+            },
+            "Pardo": {
+                "MG": {
+                    "Valor": 2234,
+                    "Porcentagem": "36.1%"
+                },
+                "Matipó": {
+                    "Valor": 2,
+                    "Porcentagem": "40.0%"
+                }
+            },
+            "Preto": {
+                "MG": {
+                    "Valor": 852,
+                    "Porcentagem": "13.8%"
+                },
+                "Matipó": {
+                    "Valor": 2,
+                    "Porcentagem": "40.0%"
+                }
+            },
+            "Amarelo": {
+                "MG": {
+                    "Valor": 23,
+                    "Porcentagem": "0.4%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Indigena": {
+                "MG": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Jovens (10-29)": {
+                "MG": {
+                    "Valor": 48,
+                    "Porcentagem": "0.8%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "<10": {
+                "MG": {
+                    "Valor": 4,
+                    "Porcentagem": "0.1%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "10-14": {
+                "MG": {
+                    "Valor": 1,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "15-19": {
+                "MG": {
+                    "Valor": 8,
+                    "Porcentagem": "0.1%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "20-24": {
+                "MG": {
+                    "Valor": 15,
+                    "Porcentagem": "0.2%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "25-29": {
+                "MG": {
+                    "Valor": 24,
+                    "Porcentagem": "0.4%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "30-34": {
+                "MG": {
+                    "Valor": 44,
+                    "Porcentagem": "0.7%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "35-39": {
+                "MG": {
+                    "Valor": 74,
+                    "Porcentagem": "1.2%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "40-44": {
+                "MG": {
+                    "Valor": 107,
+                    "Porcentagem": "1.7%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "45-49": {
+                "MG": {
+                    "Valor": 188,
+                    "Porcentagem": "3.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "50-54": {
+                "MG": {
+                    "Valor": 295,
+                    "Porcentagem": "4.8%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "55-59": {
+                "MG": {
+                    "Valor": 464,
+                    "Porcentagem": "7.5%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "20.0%"
+                }
+            },
+            "60-64": {
+                "MG": {
+                    "Valor": 615,
+                    "Porcentagem": "9.9%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "20.0%"
+                }
+            },
+            "65-69": {
+                "MG": {
+                    "Valor": 835,
+                    "Porcentagem": "13.5%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "20.0%"
+                }
+            },
+            "70-74": {
+                "MG": {
+                    "Valor": 775,
+                    "Porcentagem": "12.5%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "20.0%"
+                }
+            },
+            "75-79": {
+                "MG": {
+                    "Valor": 885,
+                    "Porcentagem": "14.3%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "80+": {
+                "MG": {
+                    "Valor": 1858,
+                    "Porcentagem": "30.0%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "20.0%"
+                }
+            }
+        },
+        "2016": {
+            "Obitos": {
+                "MG": {
+                    "Valor": 5406,
+                    "Porcentagem": "100.0%"
+                },
+                "Matipó": {
+                    "Valor": 4,
+                    "Porcentagem": "100.0%"
+                }
+            },
+            "Masculino": {
+                "MG": {
+                    "Valor": 2304,
+                    "Porcentagem": "42.6%"
+                },
+                "Matipó": {
+                    "Valor": 1,
+                    "Porcentagem": "25.0%"
+                }
+            },
+            "Feminino": {
+                "MG": {
+                    "Valor": 3102,
+                    "Porcentagem": "57.4%"
+                },
+                "Matipó": {
+                    "Valor": 3,
+                    "Porcentagem": "75.0%"
+                }
+            },
+            "Branco": {
+                "MG": {
+                    "Valor": 2654,
+                    "Porcentagem": "49.1%"
+                },
+                "Matipó": {
+                    "Valor": 2,
+                    "Porcentagem": "50.0%"
+                }
+            },
+            "Pardo": {
+                "MG": {
+                    "Valor": 1728,
+                    "Porcentagem": "32.0%"
+                },
+                "Matipó": {
+                    "Valor": 2,
+                    "Porcentagem": "50.0%"
+                }
+            },
+            "Preto": {
+                "MG": {
+                    "Valor": 607,
+                    "Porcentagem": "11.2%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Amarelo": {
+                "MG": {
+                    "Valor": 14,
+                    "Porcentagem": "0.3%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Indigena": {
+                "MG": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Jovens (10-29)": {
+                "MG": {
+                    "Valor": 59,
+                    "Porcentagem": "1.1%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "<10": {
+                "MG": {
+                    "Valor": 1,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "10-14": {
+                "MG": {
+                    "Valor": 3,
+                    "Porcentagem": "0.1%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "15-19": {
+                "MG": {
+                    "Valor": 6,
+                    "Porcentagem": "0.1%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "20-24": {
+                "MG": {
+                    "Valor": 21,
+                    "Porcentagem": "0.4%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "25-29": {
+                "MG": {
+                    "Valor": 29,
+                    "Porcentagem": "0.5%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "30-34": {
+                "MG": {
+                    "Valor": 44,
+                    "Porcentagem": "0.8%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "35-39": {
+                "MG": {
+                    "Valor": 76,
+                    "Porcentagem": "1.4%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "40-44": {
+                "MG": {
+                    "Valor": 110,
+                    "Porcentagem": "2.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "45-49": {
+                "MG": {
+                    "Valor": 199,
+                    "Porcentagem": "3.7%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "50-54": {
+                "MG": {
+                    "Valor": 248,
+                    "Porcentagem": "4.6%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "55-59": {
+                "MG": {
+                    "Valor": 407,
+                    "Porcentagem": "7.5%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "60-64": {
+                "MG": {
+                    "Valor": 581,
+                    "Porcentagem": "10.7%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "65-69": {
+                "MG": {
+                    "Valor": 668,
+                    "Porcentagem": "12.4%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "70-74": {
+                "MG": {
+                    "Valor": 740,
+                    "Porcentagem": "13.7%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "75-79": {
+                "MG": {
+                    "Valor": 777,
+                    "Porcentagem": "14.4%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "80+": {
+                "MG": {
+                    "Valor": 1496,
+                    "Porcentagem": "27.7%"
+                },
+                "Matipó": {
+                    "Valor": 4,
+                    "Porcentagem": "100.0%"
+                }
+            }
+        },
+        "2026": {
+            "Obitos": {
+                "MG": {
+                    "Valor": 898,
+                    "Porcentagem": "100.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Masculino": {
+                "MG": {
+                    "Valor": 427,
+                    "Porcentagem": "47.6%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Feminino": {
+                "MG": {
+                    "Valor": 471,
+                    "Porcentagem": "52.4%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Branco": {
+                "MG": {
+                    "Valor": 425,
+                    "Porcentagem": "47.3%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Pardo": {
+                "MG": {
+                    "Valor": 331,
+                    "Porcentagem": "36.9%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Preto": {
+                "MG": {
+                    "Valor": 126,
+                    "Porcentagem": "14.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Amarelo": {
+                "MG": {
+                    "Valor": 3,
+                    "Porcentagem": "0.3%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Indigena": {
+                "MG": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "Jovens (10-29)": {
+                "MG": {
+                    "Valor": 5,
+                    "Porcentagem": "0.6%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "<10": {
+                "MG": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "10-14": {
+                "MG": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "15-19": {
+                "MG": {
+                    "Valor": 2,
+                    "Porcentagem": "0.2%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "20-24": {
+                "MG": {
+                    "Valor": 1,
+                    "Porcentagem": "0.1%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "25-29": {
+                "MG": {
+                    "Valor": 2,
+                    "Porcentagem": "0.2%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "30-34": {
+                "MG": {
+                    "Valor": 3,
+                    "Porcentagem": "0.3%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "35-39": {
+                "MG": {
+                    "Valor": 14,
+                    "Porcentagem": "1.6%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "40-44": {
+                "MG": {
+                    "Valor": 11,
+                    "Porcentagem": "1.2%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "45-49": {
+                "MG": {
+                    "Valor": 26,
+                    "Porcentagem": "2.9%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "50-54": {
+                "MG": {
+                    "Valor": 34,
+                    "Porcentagem": "3.8%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "55-59": {
+                "MG": {
+                    "Valor": 64,
+                    "Porcentagem": "7.1%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "60-64": {
+                "MG": {
+                    "Valor": 84,
+                    "Porcentagem": "9.4%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "65-69": {
+                "MG": {
+                    "Valor": 107,
+                    "Porcentagem": "11.9%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "70-74": {
+                "MG": {
+                    "Valor": 142,
+                    "Porcentagem": "15.8%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "75-79": {
+                "MG": {
+                    "Valor": 122,
+                    "Porcentagem": "13.6%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            },
+            "80+": {
+                "MG": {
+                    "Valor": 286,
+                    "Porcentagem": "31.8%"
+                },
+                "Matipó": {
+                    "Valor": 0,
+                    "Porcentagem": "0.0%"
+                }
+            }
+        }
+    }
+}

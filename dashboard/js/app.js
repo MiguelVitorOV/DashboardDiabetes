@@ -8,12 +8,27 @@ const AGE_GROUPS = [
     '40-44', '45-49', '50-54', '55-59', '60-64', '65-69', 
     '70-74', '75-79', '80+'
 ];
+const kpiMappings = {
+    'total-deaths': 'Obitos',
+    'male-deaths': 'Masculino',
+    'female-deaths': 'Feminino',
+    'youth-deaths': 'Jovens (10-29)'
+};
+
+const ethnicityKeys = {
+    'Branco': 'Branco',
+    'Pardo': 'Pardo',
+    'Preto': 'Preto',
+    'Amarelo': 'Amarelo',
+    'Indígena': 'Indigena'
+};
+
 const ETHNICITY_GROUPS = [
-    { key: 'branco', label: 'Branca', icon: 'user' },
-    { key: 'pardo', label: 'Parda', icon: 'user' },
-    { key: 'preto', label: 'Preta', icon: 'user' },
-    { key: 'amarelo', label: 'Amarela', icon: 'user' },
-    { key: 'indigena', label: 'Indígena', icon: 'user' }
+    { key: 'Branco', label: 'Branca', icon: 'user' },
+    { key: 'Pardo', label: 'Parda', icon: 'user' },
+    { key: 'Preto', label: 'Preta', icon: 'user' },
+    { key: 'Amarelo', label: 'Amarela', icon: 'user' },
+    { key: 'Indigena', label: 'Indígena', icon: 'user' }
 ];
 
 async function init() {
@@ -69,20 +84,16 @@ function updateDashboard() {
     });
 
     // Update Top KPIs
-    document.getElementById('val-total').textContent = data['Total obitos'].Valor.toLocaleString();
+    document.getElementById('val-total').textContent = (data['Obitos']?.Valor || 0).toLocaleString();
     
-    document.getElementById('val-male').textContent = data['Total masculino'].Valor.toLocaleString();
-    document.getElementById('pct-male').textContent = data['Total masculino'].Porcentagem;
+    document.getElementById('val-male').textContent = (data['Masculino']?.Valor || 0).toLocaleString();
+    document.getElementById('pct-male').textContent = data['Masculino']?.Porcentagem || "0.0%";
     
-    document.getElementById('val-female').textContent = data['Total feminino'].Valor.toLocaleString();
-    document.getElementById('pct-female').textContent = data['Total feminino'].Porcentagem;
+    document.getElementById('val-female').textContent = (data['Feminino']?.Valor || 0).toLocaleString();
+    document.getElementById('pct-female').textContent = data['Feminino']?.Porcentagem || "0.0%";
     
-    // Sum young age groups (10-19)
-    const youngTotal = data['Total 10-14'].Valor + data['Total 15-19'].Valor;
-    const totalDeaths = data['Total obitos'].Valor || 1;
-    const youngPct = ((youngTotal / totalDeaths) * 100).toFixed(1) + "%";
-    document.getElementById('val-young').textContent = youngTotal.toLocaleString();
-    document.getElementById('pct-young').textContent = youngPct;
+    document.getElementById('val-young').textContent = (data['Jovens (10-29)']?.Valor || 0).toLocaleString();
+    document.getElementById('pct-young').textContent = data['Jovens (10-29)']?.Porcentagem || "0.0%";
 
     // Render Ethnicity Section
     renderEthnicityGrid(data);
@@ -99,8 +110,7 @@ function renderEthnicityGrid(data) {
     grid.innerHTML = '';
     
     ETHNICITY_GROUPS.forEach((group, index) => {
-        const key = `Total ${group.key}`;
-        const item = data[key] || { Valor: 0, Porcentagem: "0.0%" };
+        const item = data[group.key] || { Valor: 0, Porcentagem: "0.0%" };
         
         const card = document.createElement('div');
         card.className = 'kpi-card glass sub-kpi';
@@ -123,8 +133,7 @@ function renderAgeGrid(data) {
     grid.innerHTML = '';
     
     AGE_GROUPS.forEach((age, index) => {
-        const key = `Total ${age}`;
-        const item = data[key] || { Valor: 0, Porcentagem: "0.0%" };
+        const item = data[age] || { Valor: 0, Porcentagem: "0.0%" };
         
         const card = document.createElement('div');
         card.className = 'kpi-card glass sub-kpi';
