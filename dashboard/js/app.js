@@ -12,7 +12,7 @@ const kpiMappings = {
     'total-deaths': 'Obitos',
     'male-deaths': 'Masculino',
     'female-deaths': 'Feminino',
-    'youth-deaths': 'Jovens (10-29)'
+    'youth-deaths': 'Jovens (0-29)'
 };
 
 const ethnicityKeys = {
@@ -92,8 +92,8 @@ function updateDashboard() {
     document.getElementById('val-female').textContent = (data['Feminino']?.Valor || 0).toLocaleString();
     document.getElementById('pct-female').textContent = data['Feminino']?.Porcentagem || "0.0%";
     
-    document.getElementById('val-young').textContent = (data['Jovens (10-29)']?.Valor || 0).toLocaleString();
-    document.getElementById('pct-young').textContent = data['Jovens (10-29)']?.Porcentagem || "0.0%";
+    document.getElementById('val-young').textContent = (data['Jovens (0-29)']?.Valor || 0).toLocaleString();
+    document.getElementById('pct-young').textContent = data['Jovens (0-29)']?.Porcentagem || "0.0%";
 
     // Render Ethnicity Section
     renderEthnicityGrid(data);

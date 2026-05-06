@@ -8,7 +8,7 @@ def calculate_summary(df):
         return {col: 0 for col in [
             'Obitos', 'Masculino', 'Feminino', 
             'Branco', 'Pardo', 'Preto', 
-            'Amarelo', 'Indigena', 'Jovens (10-29)', '<10'
+            'Amarelo', 'Indigena', 'Jovens (0-29)', '<10'
         ] + [f'{age}' for age in [
             '10-14', '15-19', '20-24', '25-29', '30-34', '35-39', 
             '40-44', '45-49', '50-54', '55-59', '60-64', '65-69', 
@@ -36,7 +36,7 @@ def calculate_summary(df):
         'Preto': len(df[df['tp_raca_cor'].str.contains('PRET', na=False)]),
         'Amarelo': len(df[df['tp_raca_cor'].str.contains('AMAREL', na=False)]),
         'Indigena': len(df[df['tp_raca_cor'].str.contains('INDIG', na=False)]),
-        'Jovens (10-29)': len(df[(df['nu_idade'] >= 10) & (df['nu_idade'] <= 29)]),
+        'Jovens (0-29)': len(df[(df['nu_idade'] >= 0) & (df['nu_idade'] <= 29)]),
         '<10': len(df[df['nu_idade'] < 10]),
         '10-14': len(df[(df['nu_idade'] >= 10) & (df['nu_idade'] <= 14)]),
         '15-19': len(df[(df['nu_idade'] >= 15) & (df['nu_idade'] <= 19)]),
