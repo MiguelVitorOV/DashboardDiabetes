@@ -1,0 +1,110 @@
+{
+	"fields": [
+          {
+            "name": "dt_obito",
+            "type": "date",
+            "format": "%d/%m/%Y",
+            "title": "Data do Óbito",
+            "description": "Data do Óbito"
+          },
+          {
+            "name": "dt_nascimento",
+            "type": "date",
+            "format": "%d/%m/%Y",
+            "title": "Data de Nascimento",
+            "description": "Data de nascimento"
+          },
+          {
+            "name": "nu_idade",
+            "type": "integer",
+            "title": "Idade",
+            "description": "Idade da pessoa da notificação"
+          },
+          {
+            "name": "sg_sexo",
+            "type": "string",
+            "title": "Sexo",
+            "description": "Sexo",
+            "constraints": {
+              "enum": [
+                "Feminino",
+                "Masculino",
+                "Ignorado"
+              ]
+            }
+          },
+          {
+            "name": "tp_raca_cor",
+            "type": "string",
+            "title": "Raça/Cor",
+            "description": "Raça/Cor",
+            "constraints": {
+              "enum": [
+                "Branca",
+                "Preta",
+                "Amarela",
+                "Parda",
+                "Indígena",
+                "Ignorado"
+              ]
+            }
+          },
+          {
+            "name": "tp_escolaridade",
+            "type": "string",
+            "title": "Escolaridade",
+            "description": "Escolaridade",
+            "constraints": {
+                "enum": [
+                  "de 1 a 3 anos",
+                  "de 4 a 7 anos",
+                  "de 8 a 11 anos",
+                  "12 anos e mais",
+                  "Nenhuma",
+                  "Ignorado"
+                ]
+              }
+          },
+          {
+            "name": "co_municipio_ibge_residencia",
+            "type": "string",
+            "title": "Local de residência",
+            "description": "Local de residência"
+          },
+          {
+            "name": "co_municipio_ibge_ocorrencia",
+            "type": "string",
+            "title": "Local de ocorrência",
+            "description": "Local de ocorrência"
+          },
+          {
+            "name": "co_cid_causa_basica",
+            "type": "string",
+            "title": "CID10",
+            "description": "CID10"
+          },
+          {
+            "name": "desc_cid_causa_basica",
+            "type": "string",
+            "title": "Descrição do CID",
+            "description": "Descrição do CID"
+          },
+          {
+            "name": "capitulo_cid_causa_basica",
+            "type": "string",
+            "title": "Capítulo CID",
+            "description": "Capítulo CID"
+          },
+          {
+            "name": "categoria_cid_causa_basica",
+            "type": "string",
+            "title": "Categoria CID",
+            "description": "Categoria CID"
+          }
+        ],
+  "missingValues": [
+    "NA",
+    " ",
+    ""
+  ]
+}

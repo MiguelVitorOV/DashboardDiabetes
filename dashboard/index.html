@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Diabetes MG | Mortalidade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="app-container">
+        <main class="main-content">
+            <header class="top-header">
+                <div class="header-title">
+                    <div class="logo-inline">
+                        <i data-lucide="activity" class="logo-icon"></i>
+                        <span class="logo-text">Diabetes<span>MG</span></span>
+                    </div>
+                    <h1 id="pageTitle">Painel de Mortalidade</h1>
+                    <p id="subTitle">Análise de óbitos por Diabetes (E10-E14)</p>
+                </div>
+                
+                <div class="header-actions">
+                    <div class="filter-group">
+                        <div class="filter-item">
+                            <label>Local:</label>
+                            <select id="cityToggle">
+                                <option value="MG">Minas Gerais (Total)</option>
+                                <option value="Matipó">Matipó</option>
+                            </select>
+                        </div>
+                        <div class="filter-item">
+                            <label>Ano:</label>
+                            <select id="yearSelect">
+                                <!-- Populated by JS -->
+                            </select>
+                        </div>
+                    </div>
+                    <button class="btn-refresh" id="refreshData">
+                        <i data-lucide="refresh-cw"></i>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Top Row: Core KPIs -->
+            <section class="kpi-section">
+                <div class="kpi-grid-4">
+                    <div class="kpi-card glass main-kpi">
+                        <div class="kpi-icon-wrapper blue"><i data-lucide="skull"></i></div>
+                        <div class="kpi-info">
+                            <span class="kpi-label">Total de Óbitos</span>
+                            <h2 class="kpi-value" id="val-total">0</h2>
+                            <span class="kpi-trend">100% do período</span>
+                        </div>
+                    </div>
+                    <div class="kpi-card glass main-kpi">
+                        <div class="kpi-icon-wrapper purple"><i data-lucide="mars"></i></div>
+                        <div class="kpi-info">
+                            <span class="kpi-label">Masculino</span>
+                            <h2 class="kpi-value" id="val-male">0</h2>
+                            <span class="kpi-percentage" id="pct-male">0%</span>
+                        </div>
+                    </div>
+                    <div class="kpi-card glass main-kpi">
+                        <div class="kpi-icon-wrapper pink"><i data-lucide="venus"></i></div>
+                        <div class="kpi-info">
+                            <span class="kpi-label">Feminino</span>
+                            <h2 class="kpi-value" id="val-female">0</h2>
+                            <span class="kpi-percentage" id="pct-female">0%</span>
+                        </div>
+                    </div>
+                    <div class="kpi-card glass main-kpi">
+                        <div class="kpi-icon-wrapper orange"><i data-lucide="user-plus"></i></div>
+                        <div class="kpi-info">
+                            <span class="kpi-label">Jovens (10-19)</span>
+                            <h2 class="kpi-value" id="val-young">0</h2>
+                            <span class="kpi-percentage" id="pct-young">0%</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Middle Section: Ethnicity -->
+            <section class="dashboard-section">
+                <h3 class="section-title">Distribuição por Etnia (Raça/Cor)</h3>
+                <div class="kpi-grid-5" id="ethnicity-grid">
+                    <!-- Populated by JS -->
+                </div>
+            </section>
+
+            <!-- Bottom Section: Age Groups -->
+            <section class="dashboard-section">
+                <h3 class="section-title">Faixas Etárias</h3>
+                <div class="kpi-grid-age" id="age-grid">
+                    <!-- Populated by JS -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
