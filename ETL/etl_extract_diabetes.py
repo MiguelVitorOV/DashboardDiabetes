@@ -33,6 +33,9 @@ def extract_diabetes():
             # A coluna co_cid_causa_basica contém o código
             diabetes_df = df[df['co_cid_causa_basica'].str.startswith(('E10', 'E11', 'E12', 'E13', 'E14'), na=False)]
             
+            if 'capitulo_cid_causa_basica' in diabetes_df.columns:
+                diabetes_df = diabetes_df.drop(columns=['capitulo_cid_causa_basica'])
+            
             output_file = os.path.join(output_dir, f'diabetes_{year}.csv')
             diabetes_df.to_csv(output_file, index=False, sep=';', encoding='utf-8')
             print(f"Salvo: {output_file} ({len(diabetes_df)} registros)")

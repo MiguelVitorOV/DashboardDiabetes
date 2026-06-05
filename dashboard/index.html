@@ -3,104 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Diabetes MG | Mortalidade</title>
+    <title>DataHealth MG | Monitoramento de Dados</title>
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Icons & Charts -->
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
+    <div class="loading-overlay" id="loading">
+        <div class="spinner"></div>
+        <h3 style="color: var(--primary);">Carregando Dados SES-MG...</h3>
+    </div>
+
     <div class="app-container">
         <main class="main-content">
+            <!-- Header & Filters -->
             <header class="top-header">
                 <div class="header-title">
                     <div class="logo-inline">
                         <i data-lucide="activity" class="logo-icon"></i>
-                        <span class="logo-text">Diabetes<span>MG</span></span>
+                        <span class="logo-text">DataHealth<span>MG</span></span>
                     </div>
-                    <h1 id="pageTitle">Painel de Mortalidade</h1>
-                    <p id="subTitle">Análise de óbitos por Diabetes (E10-E14)</p>
+                    <h1 id="pageTitle">Monitoramento de Dados Públicos de Saúde</h1>
+                    <p id="subTitle">Monitoramento epidemiológico (CID E10-E14)</p>
                 </div>
                 
                 <div class="header-actions">
                     <div class="filter-group">
                         <div class="filter-item">
-                            <label>Local:</label>
-                            <select id="cityToggle">
-                                <option value="MG">Minas Gerais (Total)</option>
-                                <option value="Matipó">Matipó</option>
+                            <label>Município:</label>
+                            <select id="citySelect">
+                                <option value="MG">Minas Gerais (Estado)</option>
+                                <!-- Populated dynamically -->
                             </select>
                         </div>
                         <div class="filter-item">
                             <label>Ano:</label>
                             <select id="yearSelect">
-                                <!-- Populated by JS -->
+                                <!-- Populated dynamically -->
+                            </select>
+                        </div>
+                        <div class="filter-item">
+                            <label>Tipo (CID):</label>
+                            <select id="cidSelect">
+                                <option value="Total">Todos (Total)</option>
+                                <option value="E10">E10 - Diabetes Tipo 1</option>
+                                <option value="E11">E11 - Diabetes Tipo 2</option>
+                                <option value="E12">E12 - Relacionado à desnutrição</option>
+                                <option value="E13">E13 - Outros tipos</option>
+                                <option value="E14">E14 - Não especificado</option>
                             </select>
                         </div>
                     </div>
-                    <button class="btn-refresh" id="refreshData">
-                        <i data-lucide="refresh-cw"></i>
-                    </button>
                 </div>
             </header>
 
-            <!-- Top Row: Core KPIs -->
-            <section class="kpi-section">
-                <div class="kpi-grid-4">
-                    <div class="kpi-card glass main-kpi">
-                        <div class="kpi-icon-wrapper blue"><i data-lucide="skull"></i></div>
-                        <div class="kpi-info">
-                            <span class="kpi-label">Total de Óbitos</span>
-                            <h2 class="kpi-value" id="val-total">0</h2>
-                            <span class="kpi-trend">100% do período</span>
-                        </div>
-                    </div>
-                    <div class="kpi-card glass main-kpi">
-                        <div class="kpi-icon-wrapper purple"><i data-lucide="mars"></i></div>
-                        <div class="kpi-info">
-                            <span class="kpi-label">Masculino</span>
-                            <h2 class="kpi-value" id="val-male">0</h2>
-                            <span class="kpi-percentage" id="pct-male">0%</span>
-                        </div>
-                    </div>
-                    <div class="kpi-card glass main-kpi">
-                        <div class="kpi-icon-wrapper pink"><i data-lucide="venus"></i></div>
-                        <div class="kpi-info">
-                            <span class="kpi-label">Feminino</span>
-                            <h2 class="kpi-value" id="val-female">0</h2>
-                            <span class="kpi-percentage" id="pct-female">0%</span>
-                        </div>
-                    </div>
-                    <div class="kpi-card glass main-kpi">
-                        <div class="kpi-icon-wrapper orange"><i data-lucide="user-plus"></i></div>
-                        <div class="kpi-info">
-                            <span class="kpi-label">Jovens (Até 29 anos)</span>
-                            <h2 class="kpi-value" id="val-young">0</h2>
-                            <span class="kpi-percentage" id="pct-young">0%</span>
-                        </div>
-                    </div>
+            <!-- Resumo Analítico (Dynamic Text) -->
+            <div class="summary-bar" id="summaryBar">
+                <div class="summary-icon"><i data-lucide="sparkles" style="color: white;"></i></div>
+                <div class="summary-text" id="summaryText">
+                    <!-- Text injected by JS -->
+                    Analisando dados do estado...
                 </div>
-            </section>
+            </div>
 
-            <!-- Middle Section: Ethnicity -->
-            <section class="dashboard-section">
-                <h3 class="section-title">Distribuição por Etnia (Raça/Cor)</h3>
-                <div class="kpi-grid-5" id="ethnicity-grid">
-                    <!-- Populated by JS -->
+            <!-- KPIs -->
+            <div class="kpi-row">
+                <div class="card kpi-mini">
+                    <div class="kpi-icon-box blue"><i data-lucide="users"></i></div>
+                    <div class="kpi-details">
+                        <span class="kpi-label">Total de Óbitos</span>
+                        <span class="kpi-value" id="kpiTotal">0</span>
+                    </div>
                 </div>
-            </section>
+                <div class="card kpi-mini">
+                    <div class="kpi-icon-box teal"><i data-lucide="trending-up"></i></div>
+                    <div class="kpi-details">
+                        <span class="kpi-label">Variação (YoY)</span>
+                        <span class="kpi-value" id="kpiYoy">-</span>
+                    </div>
+                </div>
+                <div class="card kpi-mini">
+                    <div class="kpi-icon-box red"><i data-lucide="alert-circle"></i></div>
+                    <div class="kpi-details">
+                        <span class="kpi-label">Maior Faixa Etária</span>
+                        <span class="kpi-value" id="kpiAge">-</span>
+                    </div>
+                </div>
+                <div class="card kpi-mini">
+                    <div class="kpi-icon-box blue"><i data-lucide="book-open"></i></div>
+                    <div class="kpi-details">
+                        <span class="kpi-label">Foco Educacional</span>
+                        <span class="kpi-value" id="kpiEdu">-</span>
+                    </div>
+                </div>
+            </div>
 
-            <!-- Bottom Section: Age Groups -->
-            <section class="dashboard-section">
-                <h3 class="section-title">Faixas Etárias</h3>
-                <div class="kpi-grid-age" id="age-grid">
-                    <!-- Populated by JS -->
+            <!-- Charts Section -->
+            <div class="dashboard-grid">
+                <!-- Evolução Temporal (Larger Card) -->
+                <div class="col-8 card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <i data-lucide="line-chart"></i>
+                            Evolução Temporal (2010 - 2026)
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <canvas id="timeChart"></canvas>
+                    </div>
                 </div>
-            </section>
+
+                <!-- Top 10 Cidades -->
+                <div class="col-4 card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <i data-lucide="bar-chart-2"></i>
+                            Cidades Mais Afetadas
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <canvas id="topCitiesChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-grid">
+                <!-- Gênero e Etnia -->
+                <div class="col-6 card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <i data-lucide="pie-chart"></i>
+                            Perfil Demográfico
+                        </div>
+                    </div>
+                    <div class="card-body" style="display: flex; align-items: center; justify-content: center;">
+                        <canvas id="demographicsChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Escolaridade -->
+                <div class="col-6 card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <i data-lucide="graduation-cap"></i>
+                            Nível de Escolaridade
+                        </div>
+                    </div>
+                    <div class="card-body" style="display: flex; align-items: center; justify-content: center;">
+                        <canvas id="educationChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
         </main>
     </div>
 
+    <!-- App Logic -->
     <script src="js/app.js"></script>
     <script>
         lucide.createIcons();
