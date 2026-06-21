@@ -16,9 +16,7 @@ def load_dashboard():
     for file_path in files:
         year = os.path.basename(file_path).split('_')[-1].replace('.csv', '')
         print(f"Processando JSON para o ano {year}...")
-        
-        df = pd.read_csv(file_path, sep=';')
-        
+        df = pd.read_csv(file_path, sep=';', encoding='utf-8')
         # Estrutura: Ano -> Municipio -> CID -> Categoria -> {Valor, Porcentagem}
         year_entry = {}
         

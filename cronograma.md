@@ -21,16 +21,16 @@ Este cronograma foi montado para transformar o projeto de um MVP baseado em arqu
 ## Fase 3: Reformulação Visual do Dashboard (Dias 11 a 15)
 *Objetivo: Deixar o dashboard focado no panorama de Minas Gerais e com visual "Premium".*
 
-- [ ] **Dia 11:** Adicionar "Cards de Resumo" no topo do dashboard (ex: Total de Óbitos MG, Principais Faixas Etárias, Ano com maior índice).
-- [ ] **Dia 12:** Refatorar os gráficos atuais. Incluir gráficos de distribuição por Gênero e Escolaridade.
-- [ ] **Dia 13:** Incluir um gráfico de barras destacando as 10 cidades com maiores números absolutos (substituindo a antiga comparação com Matipó).
-- [ ] **Dia 14:** Adicionar filtros globais no topo (ex: "Filtrar por Ano" ou "Filtrar por Tipo de Diabetes/CID").
-- [ ] **Dia 15:** Melhorar o design (cores, contrastes, tooltips) para ficar mais atrativo na apresentação do evento.
+- [x] **Dia 11:** Adicionar "Cards de Resumo" no topo do dashboard (ex: Total de Óbitos MG, Principais Faixas Etárias, Ano com maior índice).
+- [x] **Dia 12:** Refatorar os gráficos atuais. Incluir gráficos de distribuição por Gênero e Escolaridade.
+- [x] **Dia 13:** Incluir um gráfico de barras destacando as 10 cidades com maiores números absolutos (substituindo a antiga comparação com Matipó).
+- [x] **Dia 14:** Adicionar filtros globais no topo (ex: "Filtrar por Ano" ou "Filtrar por Tipo de Diabetes/CID").
+- [x] **Dia 15:** Melhorar o design (cores, contrastes, tooltips) para ficar mais atrativo na apresentação do evento.
 
 ## Fase 4: Exportação de Relatórios e Pitch (Dias 16 a 20)
 *Objetivo: Entregar a nova funcionalidade de relatórios e preparar a apresentação.*
 
-- [ ] **Dia 16-17:** Implementar a funcionalidade de "Gerar Relatório". Pode ser um estilo de impressão da página configurado via CSS (`@media print`) ou exportação PDF via biblioteca.
-- [ ] **Dia 18:** Escrever um roteiro claro de como a nova visualização atende estudantes e pesquisadores do estado inteiro.
+- [x] **Dia 16-17:** Implementar a funcionalidade de "Gerar Relatório". Funcionalidade implementada usando html2pdf.js com exportação customizável e seletiva.
+- [x] **Dia 18:** Escrever um roteiro claro de como a nova visualização atende estudantes e pesquisadores do estado inteiro.
 - [ ] **Dia 19:** Fazer o deploy do projeto em um serviço gratuito (Vercel, Render, GitHub Pages) ou garantir que rode perfeitamente offline.
 - [ ] **Dia 20:** Treinar a apresentação (pitch) exibindo os dados de MG, mostrando como o sistema extrai inteligência de arquivos CSV complexos e transforma em relatórios fáceis de ler.

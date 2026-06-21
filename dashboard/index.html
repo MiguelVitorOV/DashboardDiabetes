@@ -13,6 +13,7 @@
     <!-- Icons & Charts -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 <body>
     <div class="loading-overlay" id="loading">
@@ -34,6 +35,9 @@
                 </div>
                 
                 <div class="header-actions">
+                    <button class="btn-primary" onclick="openReportModal()">
+                        <i data-lucide="file-text"></i> Gerar Relatório
+                    </button>
                     <div class="filter-group">
                         <div class="filter-item">
                             <label>Município:</label>
@@ -81,7 +85,7 @@
                         <span class="kpi-value" id="kpiTotal">0</span>
                     </div>
                 </div>
-                <div class="card kpi-mini">
+                <div class="card kpi-mini" id="kpiYoyCard">
                     <div class="kpi-icon-box teal"><i data-lucide="trending-up"></i></div>
                     <div class="kpi-details">
                         <span class="kpi-label">Variação (YoY)</span>
@@ -163,6 +167,49 @@
 
         </main>
     </div>
+
+    <!-- Report Configuration Modal -->
+    <div id="reportModal" class="modal-overlay" style="display: none;">
+        <div class="modal-content card">
+            <div class="modal-header">
+                <h2>Configurar Relatório</h2>
+                <button class="close-btn" onclick="closeReportModal()"><i data-lucide="x"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>Título do Relatório</label>
+                    <input type="text" id="reportTitle" value="Relatório Epidemiológico - DataHealth MG" class="form-control">
+                </div>
+                
+                <h4 style="margin: 20px 0 10px;">Selecione o que incluir:</h4>
+                
+                <div class="checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="chkVisaoGeral" checked> 01 - Visão Geral (Resumo e KPIs)
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="chkEvolucao" checked> Gráfico de Evolução Temporal
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="chkTopCidades" checked> Cidades Mais Afetadas
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="chkDemografia" checked> Perfil Demográfico (Gênero)
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="chkEscolaridade" checked> Nível de Escolaridade
+                    </label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-secondary" onclick="closeReportModal()">Cancelar</button>
+                <button class="btn-primary" onclick="generateReport()"><i data-lucide="download"></i> Baixar PDF</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden Template for PDF Generation -->
+    <div id="pdfContainer" style="position: absolute; left: -9999px; top: 0;"></div>
 
     <!-- App Logic -->
     <script src="js/app.js"></script>
