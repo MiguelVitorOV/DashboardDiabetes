@@ -555,7 +555,7 @@ async function generateReport() {
         const CID_DESC = { 'E10': 'Diabetes Tipo 1', 'E11': 'Diabetes Tipo 2', 'E12': 'Relacionado à desnutrição', 'E13': 'Outros tipos', 'E14': 'Não especificado' };
         
         let pdfHtml = `
-            <div class="pdf-template">
+            <div class="pdf-template" style="width: 800px; padding: 20px; box-sizing: border-box; background: white;">
                 <div class="pdf-header">
                     <div class="pdf-header-left">
                         <h1>${title}</h1>
@@ -701,7 +701,7 @@ async function generateReport() {
                 const timeChartImage = timeChartCanvas.toDataURL('image/png');
                 
                 pdfHtml += `
-                    <div class="pdf-chart-row" style="margin-bottom: 20px;">
+                    <div class="pdf-chart-row" style="margin-bottom: 20px; page-break-inside: avoid; break-inside: avoid;">
                         <div class="pdf-chart-box" style="width: 100%; text-align: center;">
                             <h3>Evolução Temporal</h3>
                             <img src="${timeChartImage}" style="max-width: 100%; height: auto; max-height: 300px; margin-top: 10px;" />
@@ -727,7 +727,7 @@ async function generateReport() {
                 });
 
                 pdfHtml += `
-                    <div class="pdf-chart-row" style="margin-bottom: 20px;">
+                    <div class="pdf-chart-row" style="margin-bottom: 20px; page-break-inside: avoid; break-inside: avoid;">
                         <div class="pdf-chart-box" style="width: 100%;">
                             <h3>Cidades Mais Afetadas</h3>
                             <table style="width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 14px;">
@@ -757,7 +757,7 @@ async function generateReport() {
                 `;
 
                 pdfHtml += `
-                    <div class="pdf-chart-row" style="margin-bottom: 20px;">
+                    <div class="pdf-chart-row" style="margin-bottom: 20px; page-break-inside: avoid; break-inside: avoid;">
                         <div class="pdf-chart-box" style="width: 100%;">
                             <h3>Perfil Demográfico</h3>
                             <table style="width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 14px;">
@@ -787,7 +787,7 @@ async function generateReport() {
                 });
 
                 pdfHtml += `
-                    <div class="pdf-chart-row" style="margin-bottom: 20px;">
+                    <div class="pdf-chart-row" style="margin-bottom: 20px; page-break-inside: avoid; break-inside: avoid;">
                         <div class="pdf-chart-box" style="width: 100%;">
                             <h3>Nível de Escolaridade</h3>
                             <table style="width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 14px;">
@@ -817,7 +817,7 @@ async function generateReport() {
                 });
 
                 pdfHtml += `
-                    <div class="pdf-chart-row" style="margin-bottom: 20px;">
+                    <div class="pdf-chart-row" style="margin-bottom: 20px; page-break-inside: avoid; break-inside: avoid;">
                         <div class="pdf-chart-box" style="width: 100%;">
                             <h3>Distribuição por Etnia</h3>
                             <table style="width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 14px;">
@@ -850,7 +850,7 @@ async function generateReport() {
                 });
 
                 pdfHtml += `
-                    <div class="pdf-chart-row" style="margin-bottom: 20px;">
+                    <div class="pdf-chart-row" style="margin-bottom: 20px; page-break-inside: avoid; break-inside: avoid;">
                         <div class="pdf-chart-box" style="width: 100%;">
                             <h3>Distribuição por CID</h3>
                             <table style="width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 14px;">
@@ -870,7 +870,7 @@ async function generateReport() {
             }
         }
 
-        pdfHtml += `</div>`;
+        pdfHtml += `<div style="height: 40px; clear: both;"></div></div>`;
         container.innerHTML = pdfHtml;
 
         const opt = {
@@ -879,7 +879,7 @@ async function generateReport() {
             image:        { type: 'jpeg', quality: 0.98 },
             html2canvas:  { scale: 2, useCORS: true, scrollX: 0, scrollY: 0 },
             jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
-            pagebreak:    { mode: ['css', 'legacy'], avoid: ['.pdf-chart-row', '.pdf-header', '.pdf-text'] }
+            pagebreak:    { mode: ['avoid-all', 'css', 'legacy'], avoid: ['.pdf-chart-row', '.pdf-header', '.pdf-text', 'tr', 'th', 'td'] }
         };
 
         await html2pdf().set(opt).from(container.querySelector('.pdf-template')).save();
