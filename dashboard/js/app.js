@@ -8,6 +8,26 @@ let timeChartInst = null;
 let topCitiesChartInst = null;
 let demographicsChartInst = null;
 let educationChartInst = null;
+let ethnicityChartInst = null;
+let cidChartInst = null;
+
+const COMMON_TOOLTIP_CALLBACKS = {
+    label: function(context) {
+        let value = context.raw || 0;
+        let sum = context.dataset.data.reduce((a, b) => a + b, 0);
+        let percentage = sum > 0 ? ((value / sum) * 100).toFixed(1) + '%' : '0%';
+        
+        let label = context.dataset.label || '';
+        if (context.chart.config.type === 'pie' || context.chart.config.type === 'doughnut') {
+            label = context.label || '';
+        }
+        
+        if (label) {
+            label += ': ';
+        }
+        return `${label}${value.toLocaleString('pt-BR')} (${percentage})`;
+    }
+};
 
 const COLORS = {
     primary: '#005c97',
@@ -27,6 +47,8 @@ const AGE_GROUPS = [
     '40-44', '45-49', '50-54', '55-59', '60-64', '65-69', 
     '70-74', '75-79', '80+'
 ];
+const ETHNICITY_KEYS = ['Branco', 'Pardo', 'Preto', 'Amarelo', 'Indígena', 'Ignorado'];
+const CID_KEYS = ['E10', 'E11', 'E12', 'E13', 'E14'];
 
 function generateAllYearsData() {
     const todos = {};
@@ -162,6 +184,8 @@ function updateDashboard() {
     renderTopCitiesChart();
     renderDemographicsChart(data);
     renderEducationChart(data);
+    renderEthnicityChart(data);
+    renderCidChart(cityDataRaw);
 }
 
 function showNoData() {
@@ -171,7 +195,7 @@ function showNoData() {
     document.getElementById('kpiEdu').textContent = "-";
     document.getElementById('summaryText').innerHTML = "Sem dados para esta combinação de filtros.";
     
-    [timeChartInst, topCitiesChartInst, demographicsChartInst, educationChartInst].forEach(c => {
+    [timeChartInst, topCitiesChartInst, demographicsChartInst, educationChartInst, ethnicityChartInst, cidChartInst].forEach(c => {
         if(c) { c.data.datasets.forEach(d => d.data = []); c.update(); }
     });
 }
@@ -286,7 +310,10 @@ function renderTimeChart() {
         options: {
             responsive: true,
             maintainAspectRatio: false,
-            plugins: { legend: { display: false } },
+            plugins: { 
+                legend: { display: false },
+                tooltip: { callbacks: COMMON_TOOLTIP_CALLBACKS }
+            },
             scales: {
                 y: { beginAtZero: true, grid: { borderDash: [4, 4] } },
                 x: { grid: { display: false } }
@@ -327,7 +354,10 @@ function renderTopCitiesChart() {
             responsive: true,
             maintainAspectRatio: false,
             indexAxis: 'y', // Horizontal bar chart
-            plugins: { legend: { display: false } },
+            plugins: { 
+                legend: { display: false },
+                tooltip: { callbacks: COMMON_TOOLTIP_CALLBACKS }
+            },
             scales: {
                 x: { beginAtZero: true, grid: { borderDash: [4, 4] } },
                 y: { grid: { display: false }, ticks: { autoSkip: false } }
@@ -358,7 +388,8 @@ function renderDemographicsChart(data) {
             responsive: true,
             cutout: '70%',
             plugins: {
-                legend: { position: 'bottom' }
+                legend: { position: 'bottom' },
+                tooltip: { callbacks: COMMON_TOOLTIP_CALLBACKS }
             }
         }
     });
@@ -393,10 +424,105 @@ function renderEducationChart(data) {
         options: {
             responsive: true,
             maintainAspectRatio: false,
-            plugins: { legend: { display: false } },
+            plugins: { 
+                legend: { display: false },
+                tooltip: { callbacks: COMMON_TOOLTIP_CALLBACKS }
+            },
             scales: {
                 y: { beginAtZero: true, grid: { borderDash: [4, 4] } },
                 x: { grid: { display: false }, ticks: { autoSkip: false, maxRotation: 45, minRotation: 45 } }
+            }
+        }
+    });
+}
+
+function renderEthnicityChart(data) {
+    const labels = [];
+    const values = [];
+    
+    ETHNICITY_KEYS.forEach(k => {
+        const val = data[k]?.Valor;
+        if(val !== undefined && val > 0) {
+            labels.push(k);
+            values.push(val);
+        }
+    });
+
+    const ctx = document.getElementById('ethnicityChart').getContext('2d');
+    if (ethnicityChartInst) ethnicityChartInst.destroy();
+    
+    ethnicityChartInst = new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: labels,
+            datasets: [{
+                data: values,
+                backgroundColor: [COLORS.primary, COLORS.secondary, COLORS.accent, COLORS.purple, COLORS.orange, COLORS.gray],
+                borderWidth: 0,
+                hoverOffset: 4
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: { position: 'right' },
+                tooltip: { callbacks: COMMON_TOOLTIP_CALLBACKS }
+            }
+        }
+    });
+}
+
+function renderCidChart(cityDataRaw) {
+    const labels = [];
+    const values = [];
+    
+    CID_KEYS.forEach(k => {
+        const val = cityDataRaw[k]?.['Obitos']?.Valor;
+        if(val !== undefined && val > 0) {
+            labels.push(k);
+            values.push(val);
+        }
+    });
+
+    const ctx = document.getElementById('cidChart').getContext('2d');
+    if (cidChartInst) cidChartInst.destroy();
+    
+    cidChartInst = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Óbitos por CID',
+                data: values,
+                backgroundColor: COLORS.purple,
+                borderRadius: 4
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { 
+                legend: { display: false },
+                tooltip: {
+                    callbacks: {
+                        title: function(tooltipItems) {
+                            const cid = tooltipItems[0].label;
+                            const desc = {
+                                'E10': 'Diabetes Tipo 1',
+                                'E11': 'Diabetes Tipo 2',
+                                'E12': 'Relacionado à desnutrição',
+                                'E13': 'Outros tipos',
+                                'E14': 'Não especificado'
+                            };
+                            return cid + ' - ' + (desc[cid] || 'Desconhecido');
+                        },
+                        label: COMMON_TOOLTIP_CALLBACKS.label
+                    }
+                }
+            },
+            scales: {
+                y: { beginAtZero: true, grid: { borderDash: [4, 4] } },
+                x: { grid: { display: false } }
             }
         }
     });
@@ -534,51 +660,113 @@ async function generateReport() {
             if (document.getElementById('chkVisaoGeral').checked) {
                 pdfHtml += `<div style="page-break-before: always;"></div>`;
             }
-            pdfHtml += `<h2 class="pdf-section-title" style="margin-top: 0;">02 - Gráficos e Dados</h2>`;
+            pdfHtml += `<h2 class="pdf-section-title" style="margin-top: 0;">02 - Tabelas de Dados</h2>`;
             
-            if (document.getElementById('chkEvolucao').checked && timeChartInst) {
-                const img = timeChartInst.toBase64Image();
+            if (document.getElementById('chkEvolucao').checked) {
+                const timeChartCanvas = document.getElementById('timeChart');
+                const timeChartImage = timeChartCanvas.toDataURL('image/png');
+                
                 pdfHtml += `
-                    <div class="pdf-chart-row">
-                        <div class="pdf-chart-box" style="width: 100%;">
+                    <div class="pdf-chart-row" style="margin-bottom: 20px;">
+                        <div class="pdf-chart-box" style="width: 100%; text-align: center;">
                             <h3>Evolução Temporal</h3>
-                            <img src="${img}" style="max-height: 250px; object-fit: contain;">
+                            <img src="${timeChartImage}" style="max-width: 100%; height: auto; max-height: 300px; margin-top: 10px;" />
                         </div>
                     </div>
                 `;
             }
 
-            if (document.getElementById('chkTopCidades').checked && topCitiesChartInst) {
-                const img = topCitiesChartInst.toBase64Image();
+            if (document.getElementById('chkTopCidades').checked) {
+                const citiesObj = dashboardData.Ano[currentYear];
+                const citiesList = [];
+                for(const city in citiesObj) {
+                    if(city === "MG") continue;
+                    const val = citiesObj[city][currentCid]?.['Obitos']?.Valor || 0;
+                    if(val > 0) citiesList.push({ city, val });
+                }
+                citiesList.sort((a,b) => b.val - a.val);
+                const top10 = citiesList.slice(0, 10);
+
+                let rows = '';
+                top10.forEach(item => {
+                    rows += `<tr><td style="padding: 8px; border: 1px solid #ddd;">${item.city}</td><td style="padding: 8px; border: 1px solid #ddd; text-align: right;">${item.val.toLocaleString('pt-BR')}</td></tr>`;
+                });
+
                 pdfHtml += `
-                    <div class="pdf-chart-row">
+                    <div class="pdf-chart-row" style="margin-bottom: 20px;">
                         <div class="pdf-chart-box" style="width: 100%;">
                             <h3>Cidades Mais Afetadas</h3>
-                            <img src="${img}" style="max-height: 200px; object-fit: contain;">
+                            <table style="width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 14px;">
+                                <thead>
+                                    <tr style="background-color: #f8fafc;">
+                                        <th style="padding: 8px; border: 1px solid #ddd; text-align: left;">Cidade</th>
+                                        <th style="padding: 8px; border: 1px solid #ddd; text-align: right;">Óbitos</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${rows}
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 `;
             }
 
-            if (document.getElementById('chkDemografia').checked && demographicsChartInst) {
-                const img = demographicsChartInst.toBase64Image();
+            if (document.getElementById('chkDemografia').checked) {
+                const data = dashboardData.Ano[currentYear][currentCity][currentCid];
+                const masc = data['Masculino']?.Valor || 0;
+                const fem = data['Feminino']?.Valor || 0;
+
+                let rows = `
+                    <tr><td style="padding: 8px; border: 1px solid #ddd;">Masculino</td><td style="padding: 8px; border: 1px solid #ddd; text-align: right;">${masc.toLocaleString('pt-BR')}</td></tr>
+                    <tr><td style="padding: 8px; border: 1px solid #ddd;">Feminino</td><td style="padding: 8px; border: 1px solid #ddd; text-align: right;">${fem.toLocaleString('pt-BR')}</td></tr>
+                `;
+
                 pdfHtml += `
-                    <div class="pdf-chart-row">
+                    <div class="pdf-chart-row" style="margin-bottom: 20px;">
                         <div class="pdf-chart-box" style="width: 100%;">
                             <h3>Perfil Demográfico</h3>
-                            <img src="${img}" style="max-height: 250px; object-fit: contain;">
+                            <table style="width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 14px;">
+                                <thead>
+                                    <tr style="background-color: #f8fafc;">
+                                        <th style="padding: 8px; border: 1px solid #ddd; text-align: left;">Gênero</th>
+                                        <th style="padding: 8px; border: 1px solid #ddd; text-align: right;">Óbitos</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${rows}
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 `;
             }
             
-            if (document.getElementById('chkEscolaridade').checked && educationChartInst) {
-                const img = educationChartInst.toBase64Image();
+            if (document.getElementById('chkEscolaridade').checked) {
+                const data = dashboardData.Ano[currentYear][currentCity][currentCid];
+                let rows = '';
+                EDU_KEYS.forEach(k => {
+                    const val = data[k]?.Valor;
+                    if(val !== undefined && val > 0) {
+                        rows += `<tr><td style="padding: 8px; border: 1px solid #ddd;">${k}</td><td style="padding: 8px; border: 1px solid #ddd; text-align: right;">${val.toLocaleString('pt-BR')}</td></tr>`;
+                    }
+                });
+
                 pdfHtml += `
-                    <div class="pdf-chart-row">
+                    <div class="pdf-chart-row" style="margin-bottom: 20px;">
                         <div class="pdf-chart-box" style="width: 100%;">
                             <h3>Nível de Escolaridade</h3>
-                            <img src="${img}" style="max-height: 250px; object-fit: contain;">
+                            <table style="width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 14px;">
+                                <thead>
+                                    <tr style="background-color: #f8fafc;">
+                                        <th style="padding: 8px; border: 1px solid #ddd; text-align: left;">Escolaridade</th>
+                                        <th style="padding: 8px; border: 1px solid #ddd; text-align: right;">Óbitos</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${rows}
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 `;

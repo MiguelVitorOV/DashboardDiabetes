@@ -138,7 +138,7 @@
             </div>
 
             <div class="dashboard-grid">
-                <!-- Gênero e Etnia -->
+                <!-- Gênero -->
                 <div class="col-6 card">
                     <div class="card-header">
                         <div class="card-title">
@@ -161,6 +161,34 @@
                     </div>
                     <div class="card-body" style="display: flex; align-items: center; justify-content: center;">
                         <canvas id="educationChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-grid">
+                <!-- Etnia -->
+                <div class="col-6 card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <i data-lucide="users"></i>
+                            Distribuição por Etnia
+                        </div>
+                    </div>
+                    <div class="card-body" style="display: flex; align-items: center; justify-content: center;">
+                        <canvas id="ethnicityChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- CID -->
+                <div class="col-6 card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <i data-lucide="activity"></i>
+                            Distribuição por CID
+                        </div>
+                    </div>
+                    <div class="card-body" style="display: flex; align-items: center; justify-content: center;">
+                        <canvas id="cidChart"></canvas>
                     </div>
                 </div>
             </div>
@@ -191,13 +219,13 @@
                         <input type="checkbox" id="chkEvolucao" checked> Gráfico de Evolução Temporal
                     </label>
                     <label class="checkbox-label">
-                        <input type="checkbox" id="chkTopCidades" checked> Cidades Mais Afetadas
+                        <input type="checkbox" id="chkTopCidades" checked> Tabela de Cidades Mais Afetadas
                     </label>
                     <label class="checkbox-label">
-                        <input type="checkbox" id="chkDemografia" checked> Perfil Demográfico (Gênero)
+                        <input type="checkbox" id="chkDemografia" checked> Tabela de Perfil Demográfico (Gênero)
                     </label>
                     <label class="checkbox-label">
-                        <input type="checkbox" id="chkEscolaridade" checked> Nível de Escolaridade
+                        <input type="checkbox" id="chkEscolaridade" checked> Tabela de Nível de Escolaridade
                     </label>
                 </div>
             </div>
