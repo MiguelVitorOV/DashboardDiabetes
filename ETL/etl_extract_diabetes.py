@@ -23,8 +23,8 @@ def extract_diabetes():
         print(f"Extraindo dados de {year}...")
         
         try:
-            # Lendo com encoding latin1 e separador ; como observado nos arquivos da SES
-            df = pd.read_csv(file_path, sep=';', encoding='latin1', low_memory=False)
+            # Lendo com encoding utf-8-sig e separador ; como observado nos arquivos da SES
+            df = pd.read_csv(file_path, sep=';', encoding='utf-8-sig', low_memory=False)
             
             # Limpando espaços em branco dos nomes das colunas
             df.columns = df.columns.str.strip()
