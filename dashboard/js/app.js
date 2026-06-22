@@ -552,6 +552,7 @@ async function generateReport() {
         const title = document.getElementById('reportTitle').value;
         const container = document.getElementById('pdfContainer');
         const cidName = document.getElementById('cidSelect').options[document.getElementById('cidSelect').selectedIndex].text;
+        const CID_DESC = { 'E10': 'Diabetes Tipo 1', 'E11': 'Diabetes Tipo 2', 'E12': 'Relacionado à desnutrição', 'E13': 'Outros tipos', 'E14': 'Não especificado' };
         
         let pdfHtml = `
             <div class="pdf-template">
@@ -597,6 +598,37 @@ async function generateReport() {
                 }
             });
             const agePct = total > 0 ? ((maxAgeVal / total) * 100).toFixed(1) + '%' : '0%';
+
+            let maxEtniaVal = -1, maxEtniaKey = "-";
+            ETHNICITY_KEYS.forEach(etnia => {
+                if(data[etnia] && data[etnia].Valor > maxEtniaVal) {
+                    maxEtniaVal = data[etnia].Valor;
+                    maxEtniaKey = etnia;
+                }
+            });
+            const etniaPct = total > 0 ? ((maxEtniaVal / total) * 100).toFixed(1) + '%' : '0%';
+            
+            const cityDataRaw = dashboardData.Ano[currentYear][currentCity];
+            let maxCidVal = -1, maxCidKey = "-";
+            CID_KEYS.forEach(cidKey => {
+                const val = cityDataRaw[cidKey]?.['Obitos']?.Valor || 0;
+                if(val > maxCidVal) {
+                    maxCidVal = val;
+                    maxCidKey = cidKey;
+                }
+            });
+            // CID_DESC is defined at function level
+
+            if (document.getElementById('chkCID').checked) {
+                if (currentCid === 'Total') {
+                    const cidNameFreq = CID_DESC[maxCidKey] || 'Desconhecido';
+                    pdfSummaryText += `Dentre os tipos de diabetes, o CID mais frequente foi o ${maxCidKey} (${cidNameFreq}), com ${maxCidVal.toLocaleString('pt-BR')} casos. `;
+                }
+            }
+            
+            if (document.getElementById('chkEtnia').checked) {
+                pdfSummaryText += `Em relação à etnia, a maior incidência ocorreu na população declarada como '${maxEtniaKey}' (${etniaPct}). `;
+            }
 
             if (document.getElementById('chkDemografia').checked) {
                 pdfSummaryText += `Observa-se que a maior incidência ocorre na faixa etária de ${maxAgeKey} anos, correspondendo a ${agePct} dos casos. `;
@@ -653,7 +685,9 @@ async function generateReport() {
         const addChart = document.getElementById('chkEvolucao').checked || 
                          document.getElementById('chkTopCidades').checked || 
                          document.getElementById('chkDemografia').checked || 
-                         document.getElementById('chkEscolaridade').checked;
+                         document.getElementById('chkEscolaridade').checked ||
+                         document.getElementById('chkEtnia').checked ||
+                         document.getElementById('chkCID').checked;
 
         if (addChart) {
             // Force a page break before charts if VisaoGeral is also checked to guarantee consistent pagination
@@ -760,6 +794,69 @@ async function generateReport() {
                                 <thead>
                                     <tr style="background-color: #f8fafc;">
                                         <th style="padding: 8px; border: 1px solid #ddd; text-align: left;">Escolaridade</th>
+                                        <th style="padding: 8px; border: 1px solid #ddd; text-align: right;">Óbitos</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${rows}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                `;
+            }
+            
+            if (document.getElementById('chkEtnia').checked) {
+                const dataEtnia = dashboardData.Ano[currentYear][currentCity][currentCid];
+                let rows = '';
+                ETHNICITY_KEYS.forEach(k => {
+                    const val = dataEtnia[k]?.Valor;
+                    if(val !== undefined && val > 0) {
+                        rows += `<tr><td style="padding: 8px; border: 1px solid #ddd;">${k}</td><td style="padding: 8px; border: 1px solid #ddd; text-align: right;">${val.toLocaleString('pt-BR')}</td></tr>`;
+                    }
+                });
+
+                pdfHtml += `
+                    <div class="pdf-chart-row" style="margin-bottom: 20px;">
+                        <div class="pdf-chart-box" style="width: 100%;">
+                            <h3>Distribuição por Etnia</h3>
+                            <table style="width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 14px;">
+                                <thead>
+                                    <tr style="background-color: #f8fafc;">
+                                        <th style="padding: 8px; border: 1px solid #ddd; text-align: left;">Etnia</th>
+                                        <th style="padding: 8px; border: 1px solid #ddd; text-align: right;">Óbitos</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${rows}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                `;
+            }
+
+            if (document.getElementById('chkCID').checked) {
+                const cityDataRaw = dashboardData.Ano[currentYear][currentCity];
+                let rows = '';
+                CID_KEYS.forEach(k => {
+                    if (k !== 'Total') {
+                        const val = cityDataRaw[k]?.['Obitos']?.Valor;
+                        if(val !== undefined && val > 0) {
+                            const cidDescName = CID_DESC[k] || 'Desconhecido';
+                            rows += `<tr><td style="padding: 8px; border: 1px solid #ddd;">${k} - ${cidDescName}</td><td style="padding: 8px; border: 1px solid #ddd; text-align: right;">${val.toLocaleString('pt-BR')}</td></tr>`;
+                        }
+                    }
+                });
+
+                pdfHtml += `
+                    <div class="pdf-chart-row" style="margin-bottom: 20px;">
+                        <div class="pdf-chart-box" style="width: 100%;">
+                            <h3>Distribuição por CID</h3>
+                            <table style="width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 14px;">
+                                <thead>
+                                    <tr style="background-color: #f8fafc;">
+                                        <th style="padding: 8px; border: 1px solid #ddd; text-align: left;">CID</th>
                                         <th style="padding: 8px; border: 1px solid #ddd; text-align: right;">Óbitos</th>
                                     </tr>
                                 </thead>
