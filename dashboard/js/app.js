@@ -379,7 +379,7 @@ function renderDemographicsChart(data) {
             labels: ['Masculino', 'Feminino'],
             datasets: [{
                 data: [masc, fem],
-                backgroundColor: [COLORS.primary, COLORS.secondary],
+                backgroundColor: [COLORS.primary, COLORS.accent],
                 borderWidth: 0,
                 hoverOffset: 4
             }]
@@ -494,7 +494,7 @@ function renderCidChart(cityDataRaw) {
             datasets: [{
                 label: 'Óbitos por CID',
                 data: values,
-                backgroundColor: COLORS.purple,
+                backgroundColor: COLORS.primary,
                 borderRadius: 4
             }]
         },
