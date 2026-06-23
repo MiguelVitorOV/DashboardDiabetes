@@ -178,14 +178,19 @@ function updateDashboard() {
         return;
     }
 
-    updateKPIs(data);
-    
     // Toggle YoY KPI visibility
     const kpiYoyCard = document.getElementById('kpiYoyCard');
+    const kpiRow = document.querySelector('.kpi-row');
     if (kpiYoyCard) {
-        kpiYoyCard.style.display = currentYear === 'Todos' ? 'none' : 'flex';
+        if (currentYear === 'Todos') {
+            kpiYoyCard.style.display = 'none';
+            if (kpiRow) kpiRow.classList.remove('has-7-kpis');
+        } else {
+            kpiYoyCard.style.display = 'flex';
+            if (kpiRow) kpiRow.classList.add('has-7-kpis');
+        }
     }
-
+    updateKPIs(data, cityDataRaw);
     updateSummaryText(data);
     
     // Update Charts
@@ -209,7 +214,7 @@ function showNoData() {
     });
 }
 
-function updateKPIs(data) {
+function updateKPIs(data, cityDataRaw) {
     const obitos = data['Obitos']?.Valor || 0;
     document.getElementById('kpiTotal').textContent = obitos.toLocaleString('pt-BR');
     
@@ -252,6 +257,39 @@ function updateKPIs(data) {
         }
     });
     document.getElementById('kpiEdu').textContent = maxEduKey;
+
+    // Max CID
+    let maxCidVal = -1, maxCidKey = "-";
+    if (cityDataRaw) {
+        CID_KEYS.forEach(k => {
+            const val = cityDataRaw[k]?.['Obitos']?.Valor;
+            if(val !== undefined && val > maxCidVal) {
+                maxCidVal = val;
+                maxCidKey = k;
+            }
+        });
+    }
+    document.getElementById('kpiCidMain').textContent = maxCidKey;
+
+    // Max Gender
+    const masc = data['Masculino']?.Valor || 0;
+    const fem = data['Feminino']?.Valor || 0;
+    let maxGender = "-";
+    if (masc > fem) maxGender = "Masculino";
+    else if (fem > masc) maxGender = "Feminino";
+    else if (masc > 0) maxGender = "Equilibrado";
+    document.getElementById('kpiGenderMain').textContent = maxGender;
+
+    // Max Etnia
+    let maxEtniaVal = -1, maxEtniaKey = "-";
+    ETHNICITY_KEYS.forEach(etnia => {
+        const val = data[etnia]?.Valor;
+        if(val !== undefined && val > maxEtniaVal) {
+            maxEtniaVal = val;
+            maxEtniaKey = etnia;
+        }
+    });
+    document.getElementById('kpiEtniaMain').textContent = maxEtniaKey;
 }
 
 function updateSummaryText(data) {

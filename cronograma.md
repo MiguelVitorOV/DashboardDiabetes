@@ -33,4 +33,4 @@ Este cronograma foi montado para transformar o projeto de um MVP baseado em arqu
 - [x] **Dia 16-17:** Implementar a funcionalidade de "Gerar Relatório". Funcionalidade implementada usando html2pdf.js com exportação customizável e seletiva.
 - [x] **Dia 18:** Escrever um roteiro claro de como a nova visualização atende estudantes e pesquisadores do estado inteiro.
 - [ ] **Dia 19:** Fazer o deploy do projeto em um serviço gratuito (Vercel, Render, GitHub Pages) ou garantir que rode perfeitamente offline.
-- [ ] **Dia 20:** Treinar a apresentação (pitch) exibindo os dados de MG, mostrando como o sistema extrai inteligência de arquivos CSV complexos e transforma em relatórios fáceis de ler.
+- [x] **Dia 20:** Treinar a apresentação (pitch) exibindo os dados de MG, mostrando como o sistema extrai inteligência de arquivos CSV complexos e transforma em relatórios fáceis de ler.

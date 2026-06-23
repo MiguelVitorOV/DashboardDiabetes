@@ -265,12 +265,20 @@ body {
 }
 
 .kpi-mini {
-    flex: 1;
-    min-width: 220px;
+    flex: 0 0 calc(33.333% - 16px);
+    min-width: 200px;
     display: flex;
     align-items: center;
     gap: 16px;
     padding: 20px;
+}
+
+.kpi-row.has-7-kpis .kpi-mini:nth-child(-n+3) {
+    flex: 0 0 calc(33.333% - 16px);
+}
+
+.kpi-row.has-7-kpis .kpi-mini:nth-child(n+4) {
+    flex: 0 0 calc(25% - 18px);
 }
 
 .kpi-icon-box {
@@ -342,6 +350,7 @@ body {
     .filter-item:not(:last-child) { border-right: none; border-bottom: 1px solid var(--glass-border); padding-bottom: 12px; }
     .col-6 { grid-column: span 12; }
     .summary-bar { flex-direction: column; text-align: center; }
+    .kpi-mini, .kpi-row.has-7-kpis .kpi-mini:nth-child(-n+3), .kpi-row.has-7-kpis .kpi-mini:nth-child(n+4) { flex: 1 1 100%; }
 }
 
 /* Modal and Report Styles */
