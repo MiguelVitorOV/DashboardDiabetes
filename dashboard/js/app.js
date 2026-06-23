@@ -94,6 +94,15 @@ async function init() {
         const response = await fetch('data/diabetes_dashboard.json');
         dashboardData = await response.json();
         
+        // Padrões Globais Premium do Chart.js
+        if (window.Chart) {
+            Chart.defaults.font.family = "'Inter', 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif";
+            Chart.defaults.color = '#64748b';
+            Chart.defaults.plugins.tooltip.backgroundColor = 'rgba(15, 23, 42, 0.9)';
+            Chart.defaults.plugins.tooltip.padding = 12;
+            Chart.defaults.plugins.tooltip.cornerRadius = 8;
+        }
+        
         // Hide loader
         document.getElementById('loading').style.opacity = '0';
         setTimeout(() => document.getElementById('loading').style.display = 'none', 500);
@@ -315,8 +324,8 @@ function renderTimeChart() {
                 tooltip: { callbacks: COMMON_TOOLTIP_CALLBACKS }
             },
             scales: {
-                y: { beginAtZero: true, grid: { borderDash: [4, 4] } },
-                x: { grid: { display: false } }
+                y: { beginAtZero: true, border: { display: false }, grid: { color: 'rgba(0,0,0,0.05)' } },
+                x: { border: { display: false }, grid: { display: false } }
             }
         }
     });
@@ -347,7 +356,7 @@ function renderTopCitiesChart() {
                 label: 'Óbitos',
                 data: top10.map(d => d.val),
                 backgroundColor: COLORS.secondary,
-                borderRadius: 4
+                borderRadius: 6
             }]
         },
         options: {
@@ -359,8 +368,8 @@ function renderTopCitiesChart() {
                 tooltip: { callbacks: COMMON_TOOLTIP_CALLBACKS }
             },
             scales: {
-                x: { beginAtZero: true, grid: { borderDash: [4, 4] } },
-                y: { grid: { display: false }, ticks: { autoSkip: false } }
+                x: { beginAtZero: true, border: { display: false }, grid: { color: 'rgba(0,0,0,0.05)' } },
+                y: { border: { display: false }, grid: { display: false }, ticks: { autoSkip: false } }
             }
         }
     });
@@ -386,7 +395,7 @@ function renderDemographicsChart(data) {
         },
         options: {
             responsive: true,
-            cutout: '70%',
+            cutout: '80%',
             plugins: {
                 legend: { position: 'bottom' },
                 tooltip: { callbacks: COMMON_TOOLTIP_CALLBACKS }
@@ -429,8 +438,8 @@ function renderEducationChart(data) {
                 tooltip: { callbacks: COMMON_TOOLTIP_CALLBACKS }
             },
             scales: {
-                y: { beginAtZero: true, grid: { borderDash: [4, 4] } },
-                x: { grid: { display: false }, ticks: { autoSkip: false, maxRotation: 45, minRotation: 45 } }
+                y: { beginAtZero: true, border: { display: false }, grid: { color: 'rgba(0,0,0,0.05)' } },
+                x: { border: { display: false }, grid: { display: false }, ticks: { autoSkip: false, maxRotation: 45, minRotation: 45 } }
             }
         }
     });
@@ -452,7 +461,7 @@ function renderEthnicityChart(data) {
     if (ethnicityChartInst) ethnicityChartInst.destroy();
     
     ethnicityChartInst = new Chart(ctx, {
-        type: 'pie',
+        type: 'doughnut',
         data: {
             labels: labels,
             datasets: [{
@@ -464,6 +473,7 @@ function renderEthnicityChart(data) {
         },
         options: {
             responsive: true,
+            cutout: '80%',
             plugins: {
                 legend: { position: 'right' },
                 tooltip: { callbacks: COMMON_TOOLTIP_CALLBACKS }
@@ -495,7 +505,7 @@ function renderCidChart(cityDataRaw) {
                 label: 'Óbitos por CID',
                 data: values,
                 backgroundColor: COLORS.primary,
-                borderRadius: 4
+                borderRadius: 6
             }]
         },
         options: {
@@ -521,8 +531,8 @@ function renderCidChart(cityDataRaw) {
                 }
             },
             scales: {
-                y: { beginAtZero: true, grid: { borderDash: [4, 4] } },
-                x: { grid: { display: false } }
+                y: { beginAtZero: true, border: { display: false }, grid: { color: 'rgba(0,0,0,0.05)' } },
+                x: { border: { display: false }, grid: { display: false } }
             }
         }
     });
