@@ -709,16 +709,26 @@ async function generateReport() {
             const kpiYoy = document.getElementById('kpiYoy').innerText;
             const kpiAge = document.getElementById('kpiAge').innerText;
             const kpiEdu = document.getElementById('kpiEdu').innerText;
+            const kpiCidMain = document.getElementById('kpiCidMain').innerText;
+            const kpiGenderMain = document.getElementById('kpiGenderMain').innerText;
+            const kpiEtniaMain = document.getElementById('kpiEtniaMain').innerText;
             
             let kpiBlock = `<div style="flex: 1; min-width: 130px; text-align: center;"><strong style="color:var(--primary); font-size:24px;">${kpiTotal}</strong><br><span style="font-size:12px; color:#666;">TOTAL DE ÓBITOS</span></div>`;
             if (currentYear !== 'Todos') {
                 kpiBlock += `<div style="flex: 1; min-width: 130px; text-align: center;"><strong style="color:var(--primary); font-size:24px;">${kpiYoy}</strong><br><span style="font-size:12px; color:#666;">VARIAÇÃO (YOY)</span></div>`;
             }
+            if (document.getElementById('chkCID').checked) {
+                kpiBlock += `<div style="flex: 1; min-width: 130px; text-align: center;"><strong style="color:var(--primary); font-size:24px;">${kpiCidMain}</strong><br><span style="font-size:12px; color:#666;">PRINCIPAL CID</span></div>`;
+            }
             if (document.getElementById('chkDemografia').checked) {
                 kpiBlock += `<div style="flex: 1; min-width: 130px; text-align: center;"><strong style="color:var(--primary); font-size:24px;">${kpiAge}</strong><br><span style="font-size:12px; color:#666;">MAIOR FAIXA ETÁRIA</span></div>`;
+                kpiBlock += `<div style="flex: 1; min-width: 130px; text-align: center;"><strong style="color:var(--primary); font-size:24px;">${kpiGenderMain}</strong><br><span style="font-size:12px; color:#666;">GÊNERO MAIORIA</span></div>`;
             }
             if (document.getElementById('chkEscolaridade').checked) {
                 kpiBlock += `<div style="flex: 1; min-width: 130px; text-align: center;"><strong style="color:var(--primary); font-size:24px;">${kpiEdu}</strong><br><span style="font-size:12px; color:#666;">FOCO EDUCACIONAL</span></div>`;
+            }
+            if (document.getElementById('chkEtnia').checked) {
+                kpiBlock += `<div style="flex: 1; min-width: 130px; text-align: center;"><strong style="color:var(--primary); font-size:24px;">${kpiEtniaMain}</strong><br><span style="font-size:12px; color:#666;">ETNIA PREDOMINANTE</span></div>`;
             }
             
             pdfHtml += `
